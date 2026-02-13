@@ -2,7 +2,7 @@
 
 Portfólio profissional desenvolvido para apresentar minha transição de carreira para tecnologia, unindo experiência técnica com formação em Análise e Desenvolvimento de Sistemas.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5** - Estrutura semântica
 - **Tailwind CSS** (CDN) - Estilização utilitária
@@ -10,7 +10,7 @@ Portfólio profissional desenvolvido para apresentar minha transição de carrei
 - **Font Awesome** - Ícones
 - **Google Fonts (Inter)** - Tipografia
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 Rnetoo.github.io/
 ├── index.html          # Página principal
 ├── css/
