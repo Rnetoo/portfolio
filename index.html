@@ -232,26 +232,30 @@
                         <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
                             <div
                                 class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
-                                10+</div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400">Anos Experiência</div>
+                                <i class="fas fa-brain text-xl"></i>
+                            </div>
+                            <div class="text-xs text-gray-600 dark:text-gray-400">Analítico</div>
                         </div>
                         <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
                             <div
                                 class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
-                                ADS</div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400">Em Formação</div>
+                                <i class="fas fa-layer-group text-xl"></i>
+                            </div>
+                            <div class="text-xs text-gray-600 dark:text-gray-400">Organizado</div>
                         </div>
                         <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
                             <div
                                 class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
-                                Full</div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400">Stack (Objetivo)</div>
+                                <i class="fas fa-rocket text-xl"></i>
+                            </div>
+                            <div class="text-xs text-gray-600 dark:text-gray-400">Proativo</div>
                         </div>
                         <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
                             <div
                                 class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
-                                SC</div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400">Santa Catarina</div>
+                                <i class="fas fa-infinity text-xl"></i>
+                            </div>
+                            <div class="text-xs text-gray-600 dark:text-gray-400">Aprendizado Contínuo</div>
                         </div>
                     </div>
 
@@ -608,7 +612,19 @@
                         <div class="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-800">
                             <i class="fas fa-clipboard-list text-6xl text-primary opacity-50"></i>
                         </div>
-                        <div class="absolute top-4 right-4"><span
+
+                        <!-- Tag Em Desenvolvimento -->
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
+                                <i class="fas fa-code-branch text-[10px]"></i>
+                                Em Desenvolvimento
+                            </span>
+                        </div>
+
+                        <!-- Tag Acadêmico -->
+                        <div class="absolute top-4 right-4">
+                            <span
                                 class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">Acadêmico</span>
                         </div>
                     </div>
@@ -645,6 +661,16 @@
                         <div class="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-800">
                             <i class="fas fa-chart-bar text-6xl text-secondary opacity-50"></i>
                         </div>
+
+                        <!-- Tag Em Desenvolvimento -->
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
+                                <i class="fas fa-code-branch text-[10px]"></i>
+                                Em Desenvolvimento
+                            </span>
+                        </div>
+
                         <div class="absolute top-4 right-4"><span
                                 class="px-3 py-1 bg-secondary text-white text-xs font-bold rounded-full">Dados</span>
                         </div>
@@ -713,6 +739,15 @@
                         <div class="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-800">
                             <i class="fas fa-file-excel text-6xl text-primary opacity-50"></i>
                         </div>
+
+                        <!-- Tag Em Desenvolvimento -->
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
+                                <i class="fas fa-code-branch text-[10px]"></i>
+                                Em Desenvolvimento
+                            </span>
+                        </div>
                         <div class="absolute top-4 right-4"><span
                                 class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">Automação</span>
                         </div>
@@ -736,27 +771,16 @@
                     </div>
                 </div>
 
-                <!-- Card Adicionar Novo -->
-                <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-gray-300 dark:border-gray-700 hover:border-primary dark:hover:border-primary transition-all cursor-pointer reveal"
-                    onclick="showAddProjectInfo()">
-                    <div
-                        class="aspect-video flex flex-col items-center justify-center p-6 text-gray-400 group-hover:text-primary transition-colors">
-                        <i class="fas fa-plus-circle text-6xl mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2">Novo Projeto</h3>
-                        <p class="text-sm text-center">Clique para adicionar</p>
-                    </div>
+
+                <!-- CTA GitHub -->
+                <div class="mt-16 text-center reveal">
+                    <a href="https://github.com/Rnetoo" target="_blank"
+                        class="inline-flex items-center space-x-3 px-8 py-4 bg-gray-900 dark:bg-gray-800 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all">
+                        <i class="fab fa-github text-2xl"></i>
+                        <span>Ver todos no GitHub</span>
+                    </a>
                 </div>
             </div>
-
-            <!-- CTA GitHub -->
-            <div class="mt-16 text-center reveal">
-                <a href="https://github.com/Rnetoo" target="_blank"
-                    class="inline-flex items-center space-x-3 px-8 py-4 bg-gray-900 dark:bg-gray-800 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all">
-                    <i class="fab fa-github text-2xl"></i>
-                    <span>Ver todos no GitHub</span>
-                </a>
-            </div>
-        </div>
     </section>
 
     <!-- Modal -->
