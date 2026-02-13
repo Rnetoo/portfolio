@@ -1,0 +1,81 @@
+/* Fonte base */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Efeito vidro */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Texto gradiente */
+.gradient-text {
+    background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #0891b2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Hover em cards */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -15px rgba(5, 150, 105, 0.3);
+}
+
+/* Timeline */
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #059669, #0d9488);
+}
+
+@media (max-width: 768px) {
+    .timeline-line {
+        left: 30px;
+    }
+}
+
+/* Animação de habilidades */
+.skill-bar {
+    transition: width 1.5s ease-out;
+}
+
+/* Tags de tecnologia */
+.tech-tag {
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+/* Blob animado */
+.blob {
+    position: absolute;
+    filter: blur(80px);
+    opacity: 0.4;
+    animation: float 10s infinite;
+}
+
+/* Utilitários */
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
