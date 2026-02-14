@@ -296,7 +296,8 @@
                     </div>
 
                     <!-- Skills -->
-                    <div class="flex flex-wrap gap-2 mb-8">
+                    <!-- Skills - Centralizado -->
+                    <div class="flex flex-wrap justify-center gap-2 mb-8">
                         <span
                             class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
                             <i class="fas fa-code text-primary mr-2"></i>Desenvolvimento Web
@@ -315,8 +316,8 @@
                         </span>
                     </div>
 
-                    <!-- Stats -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <!-- Stats - Centralizado -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 max-w-2xl mx-auto">
                         <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
                             <div
                                 class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
@@ -347,8 +348,8 @@
                         </div>
                     </div>
 
-                    <!-- Botões de ação -->
-                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <!-- Botões de ação - Centralizado -->
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
                         <a href="assets/docs/cv-romulo-neto.pdf" download
                             class="inline-flex items-center justify-center space-x-2 px-6 py-3.5 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 transition-all duration-300 group">
                             <i class="fas fa-file-download text-lg group-hover:animate-bounce"></i>
@@ -362,12 +363,11 @@
                         </a>
                     </div>
 
-                    <div class="flex items-center space-x-4 text-gray-600 dark:text-gray-400">
-                        <i class="fas fa-map-marker-alt text-primary text-lg"></i>
-                        <span>Balneário Piçarras, Santa Catarina</span>
-                    </div>
+
                 </div>
             </div>
+        </div>
+        </div>
         </div>
     </section>
 
@@ -819,7 +819,7 @@
                     data-category="web">
                     <div class="aspect-video overflow-hidden relative">
                         <!-- THUMBNAIL CLICÁVEL -->
-                        <a href="https://rnetoo.github.io/portfolio/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/Rnetoo/portfolio" target="_blank" rel="noopener noreferrer"
                             class="block w-full h-full relative group/thumb overflow-hidden rounded-t-2xl">
                             <img src="assets/Images/thumbnail-site.png" alt="Dashboard de Qualidade da Água - Streamlit"
                                 class="w-full h-full object-cover">
@@ -997,18 +997,18 @@
                     <div class="space-y-4">
                         <div>
                             <div class="flex justify-between mb-1"><span>Lógica de Programação</span><span
-                                    class="text-primary">75%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
-                                    style="width: 0%" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Modelagem de Dados & SQL</span><span
                                     class="text-primary">60%</span></div>
                             <div class="w-full bg-gray-300 rounded-full h-2">
                                 <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
                                     style="width: 0%" data-width="60%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Modelagem de Dados & SQL</span><span
+                                    class="text-primary">50%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
+                                    style="width: 0%" data-width="50%"></div>
                             </div>
                         </div>
                         <div>
@@ -1066,23 +1066,13 @@
                     <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
                             class="fas fa-tasks text-primary"></i><span>Organização</span></div>
                     <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-users text-primary"></i><span>Liderança</span></div>
+                            class="fas fa-users text-primary"></i><span>Trabalho em Equipe</span></div>
                     <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
                             class="fas fa-comments text-primary"></i><span>Comunicação</span></div>
                 </div>
             </div>
 
-            <!-- Idiomas -->
-            <div class="reveal text-center">
-                <h3 class="text-xl font-semibold mb-4">Idiomas</h3>
-                <div class="inline-flex items-center space-x-2 glass px-6 py-3 rounded-full">
-                    <i class="fas fa-language text-2xl text-primary"></i>
-                    <div class="text-left">
-                        <div class="font-semibold">Inglês</div>
-                        <div class="text-sm text-gray-600">Leitura técnica</div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
 
@@ -1156,10 +1146,50 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 text-center text-gray-600 border-t border-gray-200 bg-gray-100 dark:bg-dark dark:text-gray-400">
+    <footer
+        class="py-12 text-center text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-dark">
         <div class="max-w-7xl mx-auto px-4">
-            <p class="mb-2">&copy; 2026 Rômulo Pereira de Souza Neto</p>
-            <p class="text-sm">Análise e Desenvolvimento de Sistemas</p>
+
+            <!-- Logo centralizado - Linha separada -->
+            <div class="flex justify-center items-center mb-8">
+                <a href="#home" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                    <!-- Ícone -->
+                    <div
+                        class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold font-mono text-sm shadow-lg hover:shadow-primary/40 transition-all duration-300 hover:scale-105">
+                        <span>&lt;R.N/&gt;</span>
+                    </div>
+                    <!-- Texto -->
+                    <span class="text-xl font-bold gradient-text">Rômulo.Neto</span>
+                </a>
+            </div>
+
+            <!-- Links rápidos -->
+            <div class="flex flex-wrap justify-center gap-6 mb-8 text-sm">
+                <a href="#home" class="hover:text-primary transition-colors">Início</a>
+                <a href="#sobre" class="hover:text-primary transition-colors">Sobre</a>
+                <a href="#portfolio" class="hover:text-primary transition-colors">Projetos</a>
+                <a href="#contato" class="hover:text-primary transition-colors">Contato</a>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="flex justify-center gap-4 mb-8">
+                <a href="https://www.linkedin.com/in/romulo-pereira-de-souza-neto/" target="_blank"
+                    class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Rnetoo" target="_blank"
+                    class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:romulo.psnw@gmail.com"
+                    class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-sm mb-2">&copy; 2025 Rômulo Pereira de Souza Neto</p>
+            <p class="text-xs text-gray-500">Desenvolvido com HTML, Tailwind CSS & JavaScript</p>
         </div>
     </footer>
 
