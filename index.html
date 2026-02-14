@@ -1103,33 +1103,72 @@
                     </div>
                 </div>
 
-                <!-- Formulário -->
+
+                <!-- Formulário com Formspree -->
                 <div class="glass rounded-2xl p-8">
                     <h3 class="text-2xl font-bold mb-6">Envie uma mensagem</h3>
-                    <form id="contact-form" class="space-y-4">
-                        <div><input type="text" required
-                                class="w-full px-4 py-3 rounded-lg bg-white/50 border border-gray-300 focus:border-primary focus:outline-none"
-                                placeholder="Seu nome"></div>
-                        <div><input type="email" required
-                                class="w-full px-4 py-3 rounded-lg bg-white/50 border border-gray-300 focus:border-primary focus:outline-none"
-                                placeholder="seu@email.com"></div>
+
+                    <!-- SUBSTITUA XXXXXX pelo seu código do Formspree -->
+                    <form action="https://formspree.io/f/xaqdowby" method="POST" class="space-y-4">
+
                         <div>
-                            <select
-                                class="w-full px-4 py-3 rounded-lg bg-white/50 border border-gray-300 focus:border-primary focus:outline-none">
+                            <label class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Nome</label>
+                            <input type="text" name="nome" required
+                                class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors"
+                                placeholder="Seu nome completo">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Email</label>
+                            <!-- "email" é obrigatório para o Formspree responder -->
+                            <input type="email" name="email" required
+                                class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors"
+                                placeholder="seu@email.com">
+                        </div>
+
+                        <div>
+                            <label
+                                class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Assunto</label>
+                            <select name="assunto"
+                                class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors">
                                 <option>Oportunidade de emprego</option>
                                 <option>Projeto freelance</option>
                                 <option>Networking</option>
                             </select>
                         </div>
-                        <div><textarea rows="4" required
-                                class="w-full px-4 py-3 rounded-lg bg-white/50 border border-gray-300 focus:border-primary focus:outline-none resize-none"
-                                placeholder="Sua mensagem..."></textarea></div>
+
+                        <div>
+                            <label
+                                class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Mensagem</label>
+                            <textarea name="mensagem" rows="4" required
+                                class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors resize-none"
+                                placeholder="Sua mensagem..."></textarea>
+                        </div>
+
+                        <!-- Configurações opcionais -->
+                        <input type="hidden" name="_subject" value="Novo contato do portfólio!">
+                        <input type="hidden" name="_replyto" value="romulo.psnw@gmail.com">
+
+                        <!-- Página de agradecimento (opcional) -->
+                        <input type="hidden" name="_next" value="https://rnetoo.github.io/obrigado.html">
+
                         <button type="submit"
-                            class="w-full py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-semibold hover:shadow-lg transition-all flex items-center justify-center space-x-2">
-                            <span>Enviar</span><i class="fas fa-paper-plane"></i>
+                            class="w-full py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-semibold hover:shadow-lg transition-all flex items-center justify-center space-x-2 group">
+                            <span>Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform"></i>
                         </button>
+
                     </form>
+
+                    <p class="text-sm text-gray-500 mt-4 text-center">
+                        Ou envie direto para <a href="mailto:romulo.psnw@gmail.com"
+                            class="text-primary hover:underline">romulo.psnw@gmail.com</a>
+                    </p>
                 </div>
+
+
+
+                div>
             </div>
         </div>
     </section>
