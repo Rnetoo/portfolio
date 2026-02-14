@@ -647,6 +647,117 @@
         </div>
     </section>
 
+    
+
+    <!-- Modal -->
+    <div id="add-project-modal"
+        class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="glass rounded-2xl p-8 max-w-md w-full transform scale-95 opacity-0 transition-all duration-300"
+            id="modal-content">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Adicionar Novo Projeto</h3>
+                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700"><i
+                        class="fas fa-times text-xl"></i></button>
+            </div>
+            <p class="text-gray-600 mb-6">Edite o arquivo <code
+                    class="bg-gray-200 px-2 py-1 rounded text-sm">index.html</code> na seção Portfólio.</p>
+            <button onclick="closeModal()"
+                class="w-full py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors">Entendi</button>
+        </div>
+    </div>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="py-20 bg-gray-100 dark:bg-dark z-10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4 reveal">Competências & <span
+                    class="gradient-text">Habilidades</span></h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <!-- Tecnologia -->
+                <div class="reveal">
+                    <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-code text-primary mr-3"></i>Tecnologia</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Lógica de Programação</span><span
+                                    class="text-primary">35%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
+                                    style="width: 0%" data-width="35%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Modelagem de Dados & SQL</span><span
+                                    class="text-primary">30%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
+                                    style="width: 0%" data-width="30%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Documentação de Processos</span><span
+                                    class="text-primary">65%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
+                                    style="width: 0%" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Análise -->
+                <div class="reveal">
+                    <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-chart-line text-secondary mr-3"></i>Análise
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Interpretação de Dados</span><span
+                                    class="text-secondary">80%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
+                                    style="width: 0%" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Elaboração de Relatórios</span><span
+                                    class="text-secondary">75%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
+                                    style="width: 0%" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Padronização de Rotinas</span><span
+                                    class="text-secondary">85%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
+                                    style="width: 0%" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competências Comportamentais -->
+            <div class="reveal mb-12">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Competências Comportamentais</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                            class="fas fa-brain text-primary"></i><span>Pensamento Analítico</span></div>
+                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                            class="fas fa-sitemap text-primary"></i><span>Visão Sistêmica</span></div>
+                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                            class="fas fa-tasks text-primary"></i><span>Organização</span></div>
+                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                            class="fas fa-users text-primary"></i><span>Trabalho em Equipe</span></div>
+                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                            class="fas fa-comments text-primary"></i><span>Comunicação</span></div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
     <!-- Portfólio de Projetos -->
     <section id="portfolio" class="py-20 bg-gray-50 dark:bg-darker z-10 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -952,115 +1063,6 @@
                     </a>
                 </div>
             </div>
-    </section>
-
-    <!-- Modal -->
-    <div id="add-project-modal"
-        class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
-        <div class="glass rounded-2xl p-8 max-w-md w-full transform scale-95 opacity-0 transition-all duration-300"
-            id="modal-content">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-2xl font-bold">Adicionar Novo Projeto</h3>
-                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700"><i
-                        class="fas fa-times text-xl"></i></button>
-            </div>
-            <p class="text-gray-600 mb-6">Edite o arquivo <code
-                    class="bg-gray-200 px-2 py-1 rounded text-sm">index.html</code> na seção Portfólio.</p>
-            <button onclick="closeModal()"
-                class="w-full py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors">Entendi</button>
-        </div>
-    </div>
-
-    <!-- Habilidades -->
-    <section id="habilidades" class="py-20 bg-gray-100 dark:bg-dark z-10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4 reveal">Competências & <span
-                    class="gradient-text">Habilidades</span></h2>
-
-            <div class="grid md:grid-cols-2 gap-12 mb-16">
-                <!-- Tecnologia -->
-                <div class="reveal">
-                    <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-code text-primary mr-3"></i>Tecnologia</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Lógica de Programação</span><span
-                                    class="text-primary">35%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
-                                    style="width: 0%" data-width="35%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Modelagem de Dados & SQL</span><span
-                                    class="text-primary">30%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
-                                    style="width: 0%" data-width="30%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Documentação de Processos</span><span
-                                    class="text-primary">65%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
-                                    style="width: 0%" data-width="65%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Análise -->
-                <div class="reveal">
-                    <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-chart-line text-secondary mr-3"></i>Análise
-                    </h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Interpretação de Dados</span><span
-                                    class="text-secondary">80%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
-                                    style="width: 0%" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Elaboração de Relatórios</span><span
-                                    class="text-secondary">75%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
-                                    style="width: 0%" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Padronização de Rotinas</span><span
-                                    class="text-secondary">85%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
-                                    style="width: 0%" data-width="85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Competências Comportamentais -->
-            <div class="reveal mb-12">
-                <h3 class="text-2xl font-semibold mb-6 text-center">Competências Comportamentais</h3>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-brain text-primary"></i><span>Pensamento Analítico</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-sitemap text-primary"></i><span>Visão Sistêmica</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-tasks text-primary"></i><span>Organização</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-users text-primary"></i><span>Trabalho em Equipe</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-comments text-primary"></i><span>Comunicação</span></div>
-                </div>
-            </div>
-
-
-        </div>
     </section>
 
     <!-- Contato -->
