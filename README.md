@@ -1,6 +1,6 @@
 # Portfólio - Rômulo Neto
 
-Portfólio profissional desenvolvido para apresentar minha transição de carreira para tecnologia, unindo experiência técnica com formação em Análise e Desenvolvimento de Sistemas.
+Portfólio profissional desenvolvido para apresentar minha transição de carreira para tecnologia, unindo experiência técnica e criatividade com formação em Análise e Desenvolvimento de Sistemas.
 
 ## Tecnologias Utilizadas
 
