@@ -35,12 +35,12 @@ if (typingElement) {
     setTimeout(typeWriter, 1000);
 }
 
-// Animação de digitação para "Full Impact"
+// Animação de digitação para "Digital Experiences"
 function typeImpact() {
-    const element = document.getElementById('typing-impact');
+    const element = document.getElementById('typing-digitaExperiences');
     if (!element) return;
     
-    const text = 'Full Impact';
+    const text = 'Digital Experiences';
     let index = 0;
     let isDeleting = false;
     
