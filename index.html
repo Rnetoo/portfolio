@@ -218,1086 +218,1143 @@
             </div>
         </div>
 
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <!--<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
             <a href="#sobre" class="text-gray-400 hover:text-primary transition-colors">
                 <i class="fas fa-chevron-down text-2xl"></i>
             </a>
         </div>
     </section>
+-->
+        <!-- Scroll Indicator Premium -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+            <a href="#sobre"
+                class="group flex items-center justify-center text-gray-400 dark:text-gray-400 transition-colors duration-300 hover:text-primary">
+                <i class="fas fa-chevron-down text-2xl animate-scroll-indicator"></i>
+            </a>
+        </div>
 
-    <!-- Sobre Section -->
-    <section id="sobre" class="py-20 z-10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- MUDANÇA: items-center → items-start -->
-            <div class="grid md:grid-cols-2 gap-12 items-start">
+        <!-- Sobre Section -->
+        <section id="sobre" class="py-20 z-10 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- MUDANÇA: items-center → items-start -->
+                <div class="grid md:grid-cols-2 gap-12 items-start">
 
-                <!-- Coluna da Imagem -->
-                <div class="reveal order-2 md:order-1 md:sticky md:top-24">
-                    <div class="relative group">
-                        <!-- Anel gradiente animado -->
-                        <div
-                            class="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse-slow">
-                        </div>
-
-                        <!-- Container da foto -->
-                        <div
-                            class="relative rounded-2xl overflow-hidden aspect-[3/4] max-w-md mx-auto ring-1 ring-gray-200 dark:ring-gray-700">
-                            <img src="assets/Images/romulo-foto-perfil.jpg"
-                                alt="Rômulo Neto - Desenvolvedor em Formação"
-                                class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <!-- Fallback -->
+                    <!-- Coluna da Imagem -->
+                    <div class="reveal order-2 md:order-1 md:sticky md:top-24">
+                        <div class="relative group">
+                            <!-- Anel gradiente animado -->
                             <div
-                                class="hidden w-full h-full bg-gradient-to-br from-primary to-secondary items-center justify-center text-white">
-                                <div class="text-center">
-                                    <span class="text-8xl font-bold block mb-2">RN</span>
-                                    <span class="text-sm opacity-80">Rômulo Neto</span>
+                                class="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse-slow">
+                            </div>
+
+                            <!-- Container da foto -->
+                            <div
+                                class="relative rounded-2xl overflow-hidden aspect-[3/4] max-w-md mx-auto ring-1 ring-gray-200 dark:ring-gray-700">
+                                <img src="assets/Images/romulo-foto-perfil.jpg"
+                                    alt="Rômulo Neto - Desenvolvedor em Formação"
+                                    class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <!-- Fallback -->
+                                <div
+                                    class="hidden w-full h-full bg-gradient-to-br from-primary to-secondary items-center justify-center text-white">
+                                    <div class="text-center">
+                                        <span class="text-8xl font-bold block mb-2">RN</span>
+                                        <span class="text-sm opacity-80">Rômulo Neto</span>
+                                    </div>
+                                </div>
+
+                                <!-- Overlay com gradiente sutil -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                 </div>
                             </div>
 
-                            <!-- Overlay com gradiente sutil -->
+                            <!-- Badge flutuante -->
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            </div>
-                        </div>
-
-                        <!-- Badge flutuante -->
-                        <div
-                            class="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 glass px-4 py-3 rounded-xl shadow-xl border border-primary/20">
-                            <div class="flex items-center space-x-2">
-                                <div class="relative flex h-3 w-3">
-                                    <span
-                                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                    <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                                class="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 glass px-4 py-3 rounded-xl shadow-xl border border-primary/20">
+                                <div class="flex items-center space-x-2">
+                                    <div class="relative flex h-3 w-3">
+                                        <span
+                                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                                    </div>
+                                    <span class="text-sm font-semibold text-gray-800 dark:text-gray-200">Open to
+                                        Work</span>
                                 </div>
-                                <span class="text-sm font-semibold text-gray-800 dark:text-gray-200">Open to Work</span>
+                            </div>
+
+                            <!-- Elementos decorativos flutuantes -->
+                            <div
+                                class="absolute -top-4 -left-4 w-20 h-20 bg-primary/10 rounded-full blur-2xl animate-float">
+                            </div>
+                            <div
+                                class="absolute -bottom-8 left-1/4 w-16 h-16 bg-secondary/10 rounded-full blur-xl animate-float animation-delay-2000">
                             </div>
                         </div>
-
-                        <!-- Elementos decorativos flutuantes -->
-                        <div
-                            class="absolute -top-4 -left-4 w-20 h-20 bg-primary/10 rounded-full blur-2xl animate-float">
-                        </div>
-                        <div
-                            class="absolute -bottom-8 left-1/4 w-16 h-16 bg-secondary/10 rounded-full blur-xl animate-float animation-delay-2000">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Coluna do Texto -->
-                <div class="reveal order-1 md:order-2">
-
-
-                    <h2 class="text-4xl font-bold mb-6">Sobre <span class="gradient-text">Mim</span></h2>
-
-                    <div
-                        class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                        <i class="fas fa-user-graduate"></i>
-                        <span>Formação acadêmica em Análise e Desenvolvimento de Sistemas</span>
                     </div>
 
-                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
-                        Sou desenvolvedor com foco em Front-End, atuando com visão Full Stack, com trajetória
-                        consolidada em desenvolvimento de projetos,
-                        gestão de processos e controle operacional em áreas atreladas à Qualidade e Meio Ambiente.
-                        Essa base profissional estruturada fortalece minha atuação em TI,
-                        unindo organização, responsabilidade e pensamento sistêmico na construção de soluções digitais.
-                    </p>
+                    <!-- Coluna do Texto -->
+                    <div class="reveal order-1 md:order-2">
 
-                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
-                        Minha carreira foi construída em ambientes que exigem <strong>organização, análise, documentação
-                            técnica e responsabilidade na execução</strong>.
-                        Atuei com planejamento de escopo, controle de prazos, padronização de processos e tomada de
-                        decisão orientada por dados —
-                        competências que hoje aplico diretamente no desenvolvimento de software e na estruturação de
-                        aplicações web.
-                    </p>
 
-                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
-                        Minha atuação em tecnologia está centrada na construção de <strong>interfaces consistentes, bem
-                            estruturadas e orientadas à experiência do usuário</strong>,
-                        aplicando boas práticas de código, princípios de arquitetura e organização lógica.
-                        Mantenho evolução técnica contínua em desenvolvimento web e arquitetura de aplicações,
-                        sempre aplicando esses conhecimentos na construção de projetos próprios — incluindo este
-                        portfólio.
-                    </p>
+                        <h2 class="text-4xl font-bold mb-6">Sobre <span class="gradient-text">Mim</span></h2>
 
-                    <div class="glass p-6 rounded-xl border-l-4 border-primary mb-6 bg-primary/5">
-                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                            <i class="fas fa-lightbulb text-primary mr-2"></i>
-                            Trago como diferencial <strong>maturidade profissional, disciplina, visão estruturada de
-                                projeto e compromisso com qualidade</strong>.
-                            Busco integrar equipes onde possa contribuir com organização, clareza técnica e construção
-                            consistente de produtos digitais,
-                            consolidando minha atuação como desenvolvedor de forma sólida e sustentável.
+                        <div
+                            class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Formação acadêmica em Análise e Desenvolvimento de Sistemas</span>
+                        </div>
+
+                        <p class="text-lg text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
+                            Sou desenvolvedor com foco em Front-End, atuando com visão Full Stack, com trajetória
+                            consolidada em desenvolvimento de projetos,
+                            gestão de processos e controle operacional em áreas atreladas à Qualidade e Meio Ambiente.
+                            Essa base profissional estruturada fortalece minha atuação em TI,
+                            unindo organização, responsabilidade e pensamento sistêmico na construção de soluções
+                            digitais.
                         </p>
-                    </div>
 
-                    <!-- Skills -->
-                    <div class="flex flex-wrap gap-2 mb-8">
-                        <span
-                            class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
-                            <i class="fas fa-code text-primary mr-2"></i>Desenvolvimento Web
-                        </span>
-                        <span
-                            class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
-                            <i class="fas fa-laptop-code text-primary mr-2"></i>Desenvolvimento de Software
-                        </span>
-                        <span
-                            class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
-                            <i class="fas fa-sitemap text-primary mr-2"></i>Arquitetura de Software
-                        </span>
-                        <span
-                            class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
-                            <i class="fas fa-project-diagram text-primary mr-2"></i>Modelagem de Sistemas
-                        </span>
-                        <span
-                            class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
-                            <i class="fas fa-tasks text-primary mr-2"></i>Gestão de Projetos
-                        </span>
-                        <span
-                            class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
-                            <i class="fas fa-random text-primary mr-2"></i>Mapeamento de Processos
-                        </span>
-                        <span
-                            class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
-                            <i class="fas fa-chart-line text-primary mr-2"></i>Análise de Dados
-                        </span>
-                        <span
-                            class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
-                            <i class="fas fa-brain text-primary mr-2"></i>Business Intelligence BI
-                        </span>
-                    </div>
+                        <p class="text-lg text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
+                            Minha carreira foi construída em ambientes que exigem <strong>organização, análise,
+                                documentação
+                                técnica e responsabilidade na execução</strong>.
+                            Atuei com planejamento de escopo, controle de prazos, padronização de processos e tomada de
+                            decisão orientada por dados —
+                            competências que hoje aplico diretamente no desenvolvimento de software e na estruturação de
+                            aplicações web.
+                        </p>
 
-                    <!-- Stats -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                        <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
-                            <div
-                                class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-brain text-xl"></i>
-                            </div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400">Analítico</div>
-                        </div>
-                        <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
-                            <div
-                                class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-layer-group text-xl"></i>
-                            </div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400">Adaptável</div>
-                        </div>
-                        <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
-                            <div
-                                class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-rocket text-xl"></i>
-                            </div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400">Orientado a Resultados</div>
-                        </div>
-                        <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
-                            <div
-                                class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-infinity text-xl"></i>
-                            </div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400">Aprendizado Contínuo</div>
-                        </div>
-                    </div>
+                        <p class="text-lg text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
+                            Minha atuação em tecnologia está centrada na construção de <strong>interfaces consistentes,
+                                bem
+                                estruturadas e orientadas à experiência do usuário</strong>,
+                            aplicando boas práticas de código, princípios de arquitetura e organização lógica.
+                            Mantenho evolução técnica contínua em desenvolvimento web e arquitetura de aplicações,
+                            sempre aplicando esses conhecimentos na construção de projetos próprios — incluindo este
+                            portfólio.
+                        </p>
 
-                    <!-- Botões de ação -->
-                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                        <a href="assets/docs/cv-romulo-neto.pdf" download
-                            class="inline-flex items-center justify-center space-x-2 px-6 py-3.5 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 transition-all duration-300 group">
-                            <i class="fas fa-file-download text-lg group-hover:animate-bounce"></i>
-                            <span>Download CV</span>
-                        </a>
-
-                        <a href="#portfolio"
-                            class="inline-flex items-center justify-center space-x-2 px-6 py-3.5 glass border-2 border-primary/30 text-primary dark:text-primary rounded-xl font-semibold hover:bg-primary/10 hover:border-primary hover:-translate-y-0.5 transition-all duration-300">
-                            <i class="fas fa-folder-open text-lg"></i>
-                            <span>Ver Projetos</span>
-                        </a>
-                    </div>
-
-                    <!-- Redes Sociais -->
-                    <div class="flex gap-4">
-                        <a href="https://www.linkedin.com/in/romulo-pereira-de-souza-neto/" target="_blank"
-                            class="w-12 h-12 rounded-full glass flex items-center justify-center text-xl hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Rnetoo" target="_blank"
-                            class="w-12 h-12 rounded-full glass flex items-center justify-center text-xl hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:romulo.psnw@gmail.com"
-                            class="w-12 h-12 rounded-full glass flex items-center justify-center text-xl hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="tel:+5549999083606"
-                            class="w-12 h-12 rounded-full glass flex items-center justify-center text-xl hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110">
-                            <i class="fas fa-phone"></i>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experiência Timeline -->
-    <section id="experiencia" class="py-20 bg-gray-100 dark:bg-dark z-10 relative">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4 reveal">Experiência <span
-                    class="gradient-text">Profissional</span></h2>
-            <p class="text-center text-gray-600 dark:text-gray-400 mb-16 reveal">Trajetória multidisciplinar unindo
-                tecnologia, design e gestão ambiental</p>
-
-            <div class="relative">
-                <div class="timeline-line hidden md:block"></div>
-
-                <div class="space-y-12">
-
-                    <!-- Item 1: Designer de Interiores (Autônomo) - ATUAL -->
-                    <div class="relative reveal">
-                        <div class="md:flex items-center justify-between">
-                            <div class="md:w-5/12 md:text-right pr-8 mb-4 md:mb-0">
-                                <div
-                                    class="glass p-6 rounded-2xl card-hover border-l-4 border-primary md:border-l-0 md:border-r-4">
-                                    <span
-                                        class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-2">ATUAL
-                                        - AUTÔNOMO</span>
-                                    <h3 class="text-xl font-bold mb-1">Designer de Interiores</h3>
-                                    <p class="text-primary font-semibold mb-2">Autônomo</p>
-                                    <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">2022 – o momento · 4 anos 2
-                                        meses | Brasil (Remoto/Híbrido)</p>
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
-                                        Atuação autônoma no desenvolvimento de projetos personalizados, com foco em
-                                        levantamento de requisitos,
-                                        planejamento de escopo, elaboração de documentação técnica e controle de prazos
-                                        e orçamento.
-                                    </p>
-                                    <div class="flex flex-wrap gap-1 justify-end">
-                                        <span
-                                            class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">AutoCAD</span>
-                                        <span
-                                            class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">SketchUp</span>
-                                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">V-Ray</span>
-                                        <span
-                                            class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Enscape</span>
-                                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Modelagem
-                                            3D</span>
-                                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Gestão de
-                                            Projetos</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-dark z-10">
-                            </div>
-                            <div class="md:w-5/12 pl-8 md:pl-0"></div>
-                        </div>
-                    </div>
-
-                    <!-- Item 2: Cordazzos -->
-                    <div class="relative reveal">
-                        <div class="md:flex items-center justify-between">
-                            <div class="md:w-5/12 pr-8 hidden md:block"></div>
-                            <div
-                                class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white dark:border-dark z-10">
-                            </div>
-                            <div class="md:w-5/12 pl-8 mb-4 md:mb-0">
-                                <div class="glass p-6 rounded-2xl card-hover border-l-4 border-secondary">
-                                    <h3 class="text-xl font-bold mb-1">Operação e Gestão de Processos</h3>
-                                    <p class="text-secondary font-semibold mb-2">Cordazzos Restaurante e Pizzaria Ltda.
-                                    </p>
-                                    <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">Out 2022 – Out 2025 · 3
-                                        anos 1 mês | Balneário Piçarras, SC</p>
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
-                                        Atuação operacional na produção e organização do fluxo de trabalho, garantindo
-                                        qualidade e cumprimento de prazos sob alta demanda.
-                                        Execução de processos operacionais padronizados e controle de insumos.
-                                    </p>
-                                    <div class="flex flex-wrap gap-1">
-                                        <span
-                                            class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Padronização
-                                            de Processos</span>
-                                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Gestão de
-                                            Estoque</span>
-                                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Operação
-                                            sob Alta Demanda</span>
-                                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Segurança
-                                            e Higiene</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 3: BRK Ambiental -->
-                    <div class="relative reveal">
-                        <div class="md:flex items-center justify-between">
-                            <div class="md:w-5/12 md:text-right pr-8 mb-4 md:mb-0">
-                                <div
-                                    class="glass p-6 rounded-2xl card-hover border-l-4 border-accent md:border-l-0 md:border-r-4">
-                                    <h3 class="text-xl font-bold mb-1">Técnico de Laboratório</h3>
-                                    <p class="text-accent font-semibold mb-2">BRK Ambiental</p>
-                                    <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">Out 2018 – Nov 2020 · 2
-                                        anos 2 meses | Caçador, SC</p>
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
-                                        Atuação em campo na coleta de amostras e execução de ensaios físico-químicos,
-                                        com registro e controle de dados para monitoramento da qualidade da água.
-                                    </p>
-                                    <div class="flex flex-wrap gap-1 justify-end">
-                                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Coleta de
-                                            Amostras</span>
-                                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Ensaios
-                                            Físico-Químicos</span>
-                                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Calibração de
-                                            Equipamentos</span>
-                                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Normas
-                                            Ambientais</span>
-                                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">POP</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-dark z-10">
-                            </div>
-                            <div class="md:w-5/12 pl-8 md:pl-0"></div>
-                        </div>
-                    </div>
-
-                    <!-- Item 4: Dismacenter -->
-                    <div class="relative reveal">
-                        <div class="md:flex items-center justify-between">
-                            <div class="md:w-5/12 pr-8 hidden md:block"></div>
-                            <div
-                                class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-dark z-10">
-                            </div>
-                            <div class="md:w-5/12 pl-8 mb-4 md:mb-0">
-                                <div class="glass p-6 rounded-2xl card-hover border-l-4 border-primary">
-                                    <h3 class="text-xl font-bold mb-1">Designer de Interiores</h3>
-                                    <p class="text-primary font-semibold mb-2">Dismacenter Móveis</p>
-                                    <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">Jan 2017 – Jun 2018 · 1 ano
-                                        6 meses | Caçador, SC</p>
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
-                                        Atendimento ao cliente, estudo de ambientes, proposta de layouts e soluções.
-                                        Design e modelagem 3D para vendas de móveis planejados.
-                                    </p>
-                                    <div class="flex flex-wrap gap-1">
-                                        <span
-                                            class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">AutoCAD</span>
-                                        <span
-                                            class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">SketchUp</span>
-                                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Modelagem
-                                            3D</span>
-                                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Vendas</span>
-                                        <span
-                                            class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Atendimento</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 5: VIPOSA -->
-                    <div class="relative reveal">
-                        <div class="md:flex items-center justify-between">
-                            <div class="md:w-5/12 md:text-right pr-8 mb-4 md:mb-0">
-                                <div
-                                    class="glass p-6 rounded-2xl card-hover border-l-4 border-secondary md:border-l-0 md:border-r-4">
-                                    <h3 class="text-xl font-bold mb-1">Coordenador de ETA e ETE</h3>
-                                    <p class="text-secondary font-semibold mb-2">VIPOSA S/A</p>
-                                    <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">Jun 2011 – Mai 2015 · 4
-                                        anos | Caçador, SC</p>
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
-                                        Coordenação e operação de processos de tratamento de água e efluentes
-                                        industriais.
-                                        Controle de dosagem química e elaboração de relatórios técnicos operacionais.
-                                    </p>
-                                    <div class="flex flex-wrap gap-1 justify-end">
-                                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Controle
-                                            de Processos</span>
-                                        <span
-                                            class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Monitoramento
-                                            de Qualidade</span>
-                                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Dosagem
-                                            Química</span>
-                                        <span
-                                            class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Relatórios
-                                            Técnicos</span>
-                                        <span
-                                            class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Padronização</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white dark:border-dark z-10">
-                            </div>
-                            <div class="md:w-5/12 pl-8 md:pl-0"></div>
-                        </div>
-                    </div>
-
-                    <!-- Item 6: FTR Solutions (Opcional - Experiência mais antiga) -->
-                    <div class="relative reveal opacity-75">
-                        <div class="md:flex items-center justify-between">
-                            <div class="md:w-5/12 pr-8 hidden md:block"></div>
-                            <div
-                                class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-400 rounded-full border-4 border-white dark:border-dark z-10">
-                            </div>
-                            <div class="md:w-5/12 pl-8 mb-4 md:mb-0">
-                                <div class="glass p-6 rounded-2xl card-hover border-l-4 border-gray-400">
-                                    <h3 class="text-xl font-bold mb-1 text-gray-600">Correspondente Bancário</h3>
-                                    <p class="text-gray-500 font-semibold mb-2">FTR Solutions Consultoria LTDA</p>
-                                    <p class="text-gray-400 text-sm mb-3">Fev 2007 – Out 2008 · 1 ano 9 meses |
-                                        Blumenau, SC</p>
-                                    <p class="text-gray-500 text-sm mb-3">
-                                        Atuação como correspondente bancário prestando serviços ao extinto banco HSBC.
-                                        Atendimento ao cliente e operações bancárias.
-                                    </p>
-                                    <div class="flex flex-wrap gap-1">
-                                        <span
-                                            class="px-2 py-1 bg-gray-200 text-gray-600 text-xs rounded">Atendimento</span>
-                                        <span class="px-2 py-1 bg-gray-200 text-gray-600 text-xs rounded">Vendas</span>
-                                        <span
-                                            class="px-2 py-1 bg-gray-200 text-gray-600 text-xs rounded">Relacionamento</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Portfólio de Projetos -->
-    <section id="portfolio" class="py-20 bg-gray-50 dark:bg-darker z-10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4 reveal">Meu <span class="gradient-text">Portfólio</span></h2>
-            <p class="text-center text-gray-600 dark:text-gray-400 mb-12 reveal max-w-2xl mx-auto">
-                Projetos acadêmicos e pessoais desenvolvidos durante a graduação
-            </p>
-
-            <!-- Filtros -->
-            <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
-                <button onclick="filterProjects('all')"
-                    class="filter-btn active px-6 py-2 rounded-full glass font-medium transition-all hover:bg-primary hover:text-white"
-                    data-filter="all">Todos</button>
-                <button onclick="filterProjects('academico')"
-                    class="filter-btn px-6 py-2 rounded-full glass font-medium transition-all hover:bg-primary hover:text-white"
-                    data-filter="academico"><i class="fas fa-graduation-cap mr-2"></i>Acadêmicos</button>
-                <button onclick="filterProjects('web')"
-                    class="filter-btn px-6 py-2 rounded-full glass font-medium transition-all hover:bg-primary hover:text-white"
-                    data-filter="web"><i class="fas fa-globe mr-2"></i>Web</button>
-                <button onclick="filterProjects('dados')"
-                    class="filter-btn px-6 py-2 rounded-full glass font-medium transition-all hover:bg-primary hover:text-white"
-                    data-filter="dados"><i class="fas fa-database mr-2"></i>Dados</button>
-                <button onclick="filterProjects('automation')"
-                    class="filter-btn px-6 py-2 rounded-full glass font-medium transition-all hover:bg-primary hover:text-white"
-                    data-filter="automation"><i class="fas fa-robot mr-2"></i>Automação</button>
-            </div>
-
-            <!-- Grid de Projetos -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
-
-                <!-- Projeto 1 Controle de Estoque -->
-                <div class="project-card group relative overflow-hidden rounded-2xl glass card-hover reveal"
-                    data-category="academico web">
-                    <div class="aspect-video overflow-hidden relative">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-20 group-hover:opacity-30 transition-opacity">
-                        </div>
-                        <div class="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-800">
-                            <i class="fas fa-clipboard-list text-6xl text-primary opacity-50"></i>
+                        <div class="glass p-6 rounded-xl border-l-4 border-primary mb-6 bg-primary/5">
+                            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                                <i class="fas fa-lightbulb text-primary mr-2"></i>
+                                Trago como diferencial <strong>maturidade profissional, disciplina, visão estruturada de
+                                    projeto e compromisso com qualidade</strong>.
+                                Busco integrar equipes onde possa contribuir com organização, clareza técnica e
+                                construção
+                                consistente de produtos digitais,
+                                consolidando minha atuação como desenvolvedor de forma sólida e sustentável.
+                            </p>
                         </div>
 
-                        <!-- Tag Em Desenvolvimento -->
-                        <div class="absolute top-4 left-4">
+                        <!-- Skills -->
+                        <div class="flex flex-wrap gap-2 mb-8">
                             <span
-                                class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
-                                <i class="fas fa-code-branch text-[10px]"></i>
-                                Em Desenvolvimento
+                                class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
+                                <i class="fas fa-code text-primary mr-2"></i>Desenvolvimento Web
+                            </span>
+                            <span
+                                class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
+                                <i class="fas fa-laptop-code text-primary mr-2"></i>Desenvolvimento de Software
+                            </span>
+                            <span
+                                class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
+                                <i class="fas fa-sitemap text-primary mr-2"></i>Arquitetura de Software
+                            </span>
+                            <span
+                                class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
+                                <i class="fas fa-project-diagram text-primary mr-2"></i>Modelagem de Sistemas
+                            </span>
+                            <span
+                                class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
+                                <i class="fas fa-tasks text-primary mr-2"></i>Gestão de Projetos
+                            </span>
+                            <span
+                                class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
+                                <i class="fas fa-random text-primary mr-2"></i>Mapeamento de Processos
+                            </span>
+                            <span
+                                class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
+                                <i class="fas fa-chart-line text-primary mr-2"></i>Análise de Dados
+                            </span>
+                            <span
+                                class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700">
+                                <i class="fas fa-brain text-primary mr-2"></i>Business Intelligence BI
                             </span>
                         </div>
 
-                        <!-- Tag Acadêmico -->
-                        <div class="absolute top-4 right-4">
-                            <span
-                                class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">Acadêmico</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Sistema de Gestão
-                            de Estoque</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Sistema completo de controle de estoque com
-                            cadastro de produtos e relatórios.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Node.js</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Express</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">MySQL</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">HTML</span>
-                        </div>
-                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
-                            <span class="text-sm text-gray-500">2026</span>
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-gray-400 hover:text-primary"><i
-                                        class="fab fa-github text-lg"></i></a>
-                                <a href="#" class="text-gray-400 hover:text-primary"><i
-                                        class="fas fa-external-link-alt text-lg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 2 Dashboard Ambiental de qualidade da água-->
-                <div class="project-card group relative overflow-hidden rounded-2xl glass card-hover reveal"
-                    data-category="dados automation">
-                    <div class="aspect-video overflow-hidden relative">
-
-                        <!-- THUMBNAIL CLICÁVEL -->
-                        <a href="https://dbqualidadeagua.streamlit.app" target="_blank" rel="noopener noreferrer"
-                            class="block w-full h-full relative group/thumb overflow-hidden rounded-t-2xl">
-                            <img src="assets/Images/thumbnail-agua.png" alt="Dashboard de Qualidade da Água - Streamlit"
-                                class="w-full h-full object-cover">
-
-                            <!-- Fallback -->
-                            <div
-                                class="fallback-icon hidden w-full h-full bg-gradient-to-br from-secondary to-accent items-center justify-center">
-                                <i class="fas fa-chart-bar text-6xl text-white opacity-50"></i>
-                            </div>
-
-                            <!-- Overlay que desliza de baixo -->
-                            <div
-                                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-secondary to-secondary/90 p-4 transform translate-y-full group-hover/thumb:translate-y-0 transition-transform duration-300 ease-out">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-white font-semibold text-sm">Ver projeto</span>
-                                    <span
-                                        class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white">
-                                        <i class="fas fa-arrow-up text-xs"></i>
-                                    </span>
+                        <!-- Stats -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                            <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
+                                <div
+                                    class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-brain text-xl"></i>
                                 </div>
+                                <div class="text-xs text-gray-600 dark:text-gray-400">Analítico</div>
                             </div>
-                        </a>
-
-                        <!-- Tag Em Desenvolvimento -->
-                        <div class="absolute top-4 left-4 z-10 pointer-events-none">
-                            <span
-                                class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
-                                <i class="fas fa-code-branch text-[10px]"></i>
-                                1.0
-                            </span>
+                            <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
+                                <div
+                                    class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-layer-group text-xl"></i>
+                                </div>
+                                <div class="text-xs text-gray-600 dark:text-gray-400">Adaptável</div>
+                            </div>
+                            <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
+                                <div
+                                    class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-rocket text-xl"></i>
+                                </div>
+                                <div class="text-xs text-gray-600 dark:text-gray-400">Orientado a Resultados</div>
+                            </div>
+                            <div class="glass p-4 rounded-xl text-center group hover:bg-primary/5 transition-colors">
+                                <div
+                                    class="text-2xl font-bold gradient-text mb-1 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-infinity text-xl"></i>
+                                </div>
+                                <div class="text-xs text-gray-600 dark:text-gray-400">Aprendizado Contínuo</div>
+                            </div>
                         </div>
 
-                        <!-- Tag Dados -->
-                        <div class="absolute top-4 right-4 z-10 pointer-events-none">
-                            <span class="px-3 py-1 bg-secondary text-white text-xs font-bold rounded-full">Dados</span>
-                        </div>
-                    </div>
-
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-secondary transition-colors">
-                            <a href="https://dbqualidadeagua.streamlit.app" target="_blank" class="hover:underline">
-                                Dashboard Ambiental
+                        <!-- Botões de ação -->
+                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                            <a href="assets/docs/cv-romulo-neto.pdf" download
+                                class="inline-flex items-center justify-center space-x-2 px-6 py-3.5 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 transition-all duration-300 group">
+                                <i class="fas fa-file-download text-lg group-hover:animate-bounce"></i>
+                                <span>Download CV</span>
                             </a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
-                            Dashboard para monitoramento de indicadores de qualidade da água.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-xs rounded-full bg-secondary/10 text-secondary">Python</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-secondary/10 text-secondary">Streamlit</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-secondary/10 text-secondary">Pandas</span>
+
+                            <a href="#portfolio"
+                                class="inline-flex items-center justify-center space-x-2 px-6 py-3.5 glass border-2 border-primary/30 text-primary dark:text-primary rounded-xl font-semibold hover:bg-primary/10 hover:border-primary hover:-translate-y-0.5 transition-all duration-300">
+                                <i class="fas fa-folder-open text-lg"></i>
+                                <span>Ver Projetos</span>
+                            </a>
                         </div>
-                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
-                            <span class="text-sm text-gray-500">2026</span>
-                            <div class="flex space-x-3">
-                                <a href="https://dbqualidadeagua.streamlit.app" target="_blank"
-                                    class="text-secondary hover:text-primary transition-colors"
-                                    title="Ver projeto ao vivo">
-                                    <i class="fas fa-external-link-alt text-lg"></i>
-                                </a>
-                                <a href="#" class="text-gray-400 hover:text-secondary" title="Código no GitHub">
-                                    <i class="fab fa-github text-lg"></i>
-                                </a>
-                            </div>
+
+                        <!-- Redes Sociais -->
+                        <div class="flex gap-4">
+                            <a href="https://www.linkedin.com/in/romulo-pereira-de-souza-neto/" target="_blank"
+                                class="w-12 h-12 rounded-full glass flex items-center justify-center text-xl hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Rnetoo" target="_blank"
+                                class="w-12 h-12 rounded-full glass flex items-center justify-center text-xl hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:romulo.psnw@gmail.com"
+                                class="w-12 h-12 rounded-full glass flex items-center justify-center text-xl hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+5549999083606"
+                                class="w-12 h-12 rounded-full glass flex items-center justify-center text-xl hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110">
+                                <i class="fas fa-phone"></i>
+                            </a>
                         </div>
+
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Projeto 3 -->
-                <div class="project-card group relative overflow-hidden rounded-2xl glass card-hover reveal"
-                    data-category="web">
-                    <div class="aspect-video overflow-hidden relative">
-                        <!-- THUMBNAIL CLICÁVEL -->
-                        <a href="https://github.com/Rnetoo/portfolio" target="_blank" rel="noopener noreferrer"
-                            class="block w-full h-full relative group/thumb overflow-hidden rounded-t-2xl">
-                            <img src="assets/Images/thumbnail-site.png" alt="Dashboard de Qualidade da Água - Streamlit"
-                                class="w-full h-full object-cover">
+        <!-- Experiência Timeline -->
+        <section id="experiencia" class="py-20 bg-gray-100 dark:bg-dark z-10 relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-4 reveal">Experiência <span
+                        class="gradient-text">Profissional</span></h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-16 reveal">Trajetória multidisciplinar unindo
+                    tecnologia, design e gestão ambiental</p>
 
-                            <!-- Fallback -->
-                            <div
-                                class="fallback-icon hidden w-full h-full bg-gradient-to-br from-secondary to-accent items-center justify-center">
-                                <i class="fas fa-chart-bar text-6xl text-white opacity-50"></i>
+                <div class="relative">
+                    <div class="timeline-line hidden md:block"></div>
+
+                    <div class="space-y-12">
+
+                        <!-- Item 1: Designer de Interiores (Autônomo) - ATUAL -->
+                        <div class="relative reveal">
+                            <div class="md:flex items-center justify-between">
+                                <div class="md:w-5/12 md:text-right pr-8 mb-4 md:mb-0">
+                                    <div
+                                        class="glass p-6 rounded-2xl card-hover border-l-4 border-primary md:border-l-0 md:border-r-4">
+                                        <span
+                                            class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-2">ATUAL
+                                            - AUTÔNOMO</span>
+                                        <h3 class="text-xl font-bold mb-1">Designer de Interiores</h3>
+                                        <p class="text-primary font-semibold mb-2">Autônomo</p>
+                                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">2022 – o momento · 4
+                                            anos 2
+                                            meses | Brasil (Remoto/Híbrido)</p>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
+                                            Atuação autônoma no desenvolvimento de projetos personalizados, com foco em
+                                            levantamento de requisitos,
+                                            planejamento de escopo, elaboração de documentação técnica e controle de
+                                            prazos
+                                            e orçamento.
+                                        </p>
+                                        <div class="flex flex-wrap gap-1 justify-end">
+                                            <span
+                                                class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">AutoCAD</span>
+                                            <span
+                                                class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">SketchUp</span>
+                                            <span
+                                                class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">V-Ray</span>
+                                            <span
+                                                class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Enscape</span>
+                                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Modelagem
+                                                3D</span>
+                                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Gestão de
+                                                Projetos</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-dark z-10">
+                                </div>
+                                <div class="md:w-5/12 pl-8 md:pl-0"></div>
                             </div>
+                        </div>
 
-                            <!-- Overlay que desliza de baixo -->
-                            <div
-                                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-secondary to-secondary/90 p-4 transform translate-y-full group-hover/thumb:translate-y-0 transition-transform duration-300 ease-out">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-white font-semibold text-sm">Ver projeto</span>
-                                    <span
-                                        class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white">
-                                        <i class="fas fa-arrow-up text-xs"></i>
-                                    </span>
+                        <!-- Item 2: Cordazzos -->
+                        <div class="relative reveal">
+                            <div class="md:flex items-center justify-between">
+                                <div class="md:w-5/12 pr-8 hidden md:block"></div>
+                                <div
+                                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white dark:border-dark z-10">
+                                </div>
+                                <div class="md:w-5/12 pl-8 mb-4 md:mb-0">
+                                    <div class="glass p-6 rounded-2xl card-hover border-l-4 border-secondary">
+                                        <h3 class="text-xl font-bold mb-1">Operação e Gestão de Processos</h3>
+                                        <p class="text-secondary font-semibold mb-2">Cordazzos Restaurante e Pizzaria
+                                            Ltda.
+                                        </p>
+                                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">Out 2022 – Out 2025 · 3
+                                            anos 1 mês | Balneário Piçarras, SC</p>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
+                                            Atuação operacional na produção e organização do fluxo de trabalho,
+                                            garantindo
+                                            qualidade e cumprimento de prazos sob alta demanda.
+                                            Execução de processos operacionais padronizados e controle de insumos.
+                                        </p>
+                                        <div class="flex flex-wrap gap-1">
+                                            <span
+                                                class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Padronização
+                                                de Processos</span>
+                                            <span
+                                                class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Gestão
+                                                de
+                                                Estoque</span>
+                                            <span
+                                                class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Operação
+                                                sob Alta Demanda</span>
+                                            <span
+                                                class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Segurança
+                                                e Higiene</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors">Portfólio
-                            Profissional</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Este site! Desenvolvimento de Landing Page de
-                            apresentação e portfólio com recursos,
-                            responsividade e com modo escuro.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent">HTML5</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent">CSS - Tailwind</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent">JavaScript</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent">Dark Mode</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent">Responsivo</span>
-                        </div>
-                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
-                            <span class="text-sm text-gray-500">2026</span>
-                            <div class="flex space-x-3">
-                                <a href="https://github.com/Rnetoo" target="_blank"
-                                    class="text-gray-400 hover:text-accent"><i class="fab fa-github text-lg"></i></a>
-                                <a href="#" class="text-gray-400 hover:text-accent"><i
-                                        class="fas fa-globe text-lg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 4 -->
-                <div class="project-card group relative overflow-hidden rounded-2xl glass card-hover reveal"
-                    data-category="automation dados">
-                    <div class="aspect-video overflow-hidden relative">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-primary to-accent opacity-20 group-hover:opacity-30 transition-opacity">
-                        </div>
-                        <div class="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-800">
-                            <i class="fas fa-file-excel text-6xl text-primary opacity-50"></i>
                         </div>
 
-                        <!-- Tag Em Desenvolvimento -->
-                        <div class="absolute top-4 left-4">
-                            <span
-                                class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
-                                <i class="fas fa-code-branch text-[10px]"></i>
-                                Em Desenvolvimento
-                            </span>
-                        </div>
-                        <div class="absolute top-4 right-4"><span
-                                class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">Automação</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Automatizador de
-                            Relatórios</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Script Python para automação de geração de
-                            relatórios técnicos.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Python</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Pandas</span>
-                        </div>
-                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
-                            <span class="text-sm text-gray-500">2026</span>
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-gray-400 hover:text-primary"><i
-                                        class="fab fa-github text-lg"></i></a>
+                        <!-- Item 3: BRK Ambiental -->
+                        <div class="relative reveal">
+                            <div class="md:flex items-center justify-between">
+                                <div class="md:w-5/12 md:text-right pr-8 mb-4 md:mb-0">
+                                    <div
+                                        class="glass p-6 rounded-2xl card-hover border-l-4 border-accent md:border-l-0 md:border-r-4">
+                                        <h3 class="text-xl font-bold mb-1">Técnico de Laboratório</h3>
+                                        <p class="text-accent font-semibold mb-2">BRK Ambiental</p>
+                                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">Out 2018 – Nov 2020 · 2
+                                            anos 2 meses | Caçador, SC</p>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
+                                            Atuação em campo na coleta de amostras e execução de ensaios
+                                            físico-químicos,
+                                            com registro e controle de dados para monitoramento da qualidade da água.
+                                        </p>
+                                        <div class="flex flex-wrap gap-1 justify-end">
+                                            <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Coleta de
+                                                Amostras</span>
+                                            <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Ensaios
+                                                Físico-Químicos</span>
+                                            <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Calibração
+                                                de
+                                                Equipamentos</span>
+                                            <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Normas
+                                                Ambientais</span>
+                                            <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">POP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white dark:border-dark z-10">
+                                </div>
+                                <div class="md:w-5/12 pl-8 md:pl-0"></div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 5 Micro-SaaS Casa-Quest -->
-                <div class="project-card group relative overflow-hidden rounded-2xl glass card-hover reveal"
-                    data-category="automation dados">
-                    <div class="aspect-video overflow-hidden relative">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-primary to-accent opacity-20 group-hover:opacity-30 transition-opacity">
-                        </div>
-                        <div class="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-800">
-                            <i class="fas fa-file-excel text-6xl text-primary opacity-50"></i>
                         </div>
 
-                        <!-- Tag Em Desenvolvimento -->
-                        <div class="absolute top-4 left-4">
-                            <span
-                                class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
-                                <i class="fas fa-code-branch text-[10px]"></i>
-                                Em Desenvolvimento
-                            </span>
-                        </div>
-                        <div class="absolute top-4 right-4"><span
-                                class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">SaaS</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Micro SaaS de
-                            Gestão de tarefas doméstcas GAMEFICADO</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">Estudo e aplicação de FrontEnd, BackEnd,
-                            GateWay de Pagameto, Analytics e Notificações. Migração Mobile</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">React Native</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">PostgreSQL</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">RevenueCat</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Mixpanel</span>
-                            <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">OneSignal</span>
-                        </div>
-                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
-                            <span class="text-sm text-gray-500">2026</span>
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-gray-400 hover:text-primary"><i
-                                        class="fab fa-github text-lg"></i></a>
+                        <!-- Item 4: Dismacenter -->
+                        <div class="relative reveal">
+                            <div class="md:flex items-center justify-between">
+                                <div class="md:w-5/12 pr-8 hidden md:block"></div>
+                                <div
+                                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-dark z-10">
+                                </div>
+                                <div class="md:w-5/12 pl-8 mb-4 md:mb-0">
+                                    <div class="glass p-6 rounded-2xl card-hover border-l-4 border-primary">
+                                        <h3 class="text-xl font-bold mb-1">Designer de Interiores</h3>
+                                        <p class="text-primary font-semibold mb-2">Dismacenter Móveis</p>
+                                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">Jan 2017 – Jun 2018 · 1
+                                            ano
+                                            6 meses | Caçador, SC</p>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
+                                            Atendimento ao cliente, estudo de ambientes, proposta de layouts e soluções.
+                                            Design e modelagem 3D para vendas de móveis planejados.
+                                        </p>
+                                        <div class="flex flex-wrap gap-1">
+                                            <span
+                                                class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">AutoCAD</span>
+                                            <span
+                                                class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">SketchUp</span>
+                                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Modelagem
+                                                3D</span>
+                                            <span
+                                                class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Vendas</span>
+                                            <span
+                                                class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Atendimento</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-            </div>
+                        <!-- Item 5: VIPOSA -->
+                        <div class="relative reveal">
+                            <div class="md:flex items-center justify-between">
+                                <div class="md:w-5/12 md:text-right pr-8 mb-4 md:mb-0">
+                                    <div
+                                        class="glass p-6 rounded-2xl card-hover border-l-4 border-secondary md:border-l-0 md:border-r-4">
+                                        <h3 class="text-xl font-bold mb-1">Coordenador de ETA e ETE</h3>
+                                        <p class="text-secondary font-semibold mb-2">VIPOSA S/A</p>
+                                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">Jun 2011 – Mai 2015 · 4
+                                            anos | Caçador, SC</p>
+                                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
+                                            Coordenação e operação de processos de tratamento de água e efluentes
+                                            industriais.
+                                            Controle de dosagem química e elaboração de relatórios técnicos
+                                            operacionais.
+                                        </p>
+                                        <div class="flex flex-wrap gap-1 justify-end">
+                                            <span
+                                                class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Controle
+                                                de Processos</span>
+                                            <span
+                                                class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Monitoramento
+                                                de Qualidade</span>
+                                            <span
+                                                class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Dosagem
+                                                Química</span>
+                                            <span
+                                                class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Relatórios
+                                                Técnicos</span>
+                                            <span
+                                                class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Padronização</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white dark:border-dark z-10">
+                                </div>
+                                <div class="md:w-5/12 pl-8 md:pl-0"></div>
+                            </div>
+                        </div>
 
-            <!-- CTA GitHub -->
-            <div class="mt-16 text-center reveal">
-                <a href="https://github.com/Rnetoo" target="_blank"
-                    class="inline-flex items-center space-x-3 px-8 py-4 bg-gray-900 dark:bg-gray-800 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all">
-                    <i class="fab fa-github text-2xl"></i>
-                    <span>Ver todos no GitHub</span>
-                </a>
-            </div>
-        </div>
-    </section>
+                        <!-- Item 6: FTR Solutions (Opcional - Experiência mais antiga) -->
+                        <div class="relative reveal opacity-75">
+                            <div class="md:flex items-center justify-between">
+                                <div class="md:w-5/12 pr-8 hidden md:block"></div>
+                                <div
+                                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-400 rounded-full border-4 border-white dark:border-dark z-10">
+                                </div>
+                                <div class="md:w-5/12 pl-8 mb-4 md:mb-0">
+                                    <div class="glass p-6 rounded-2xl card-hover border-l-4 border-gray-400">
+                                        <h3 class="text-xl font-bold mb-1 text-gray-600">Correspondente Bancário</h3>
+                                        <p class="text-gray-500 font-semibold mb-2">FTR Solutions Consultoria LTDA</p>
+                                        <p class="text-gray-400 text-sm mb-3">Fev 2007 – Out 2008 · 1 ano 9 meses |
+                                            Blumenau, SC</p>
+                                        <p class="text-gray-500 text-sm mb-3">
+                                            Atuação como correspondente bancário prestando serviços ao extinto banco
+                                            HSBC.
+                                            Atendimento ao cliente e operações bancárias.
+                                        </p>
+                                        <div class="flex flex-wrap gap-1">
+                                            <span
+                                                class="px-2 py-1 bg-gray-200 text-gray-600 text-xs rounded">Atendimento</span>
+                                            <span
+                                                class="px-2 py-1 bg-gray-200 text-gray-600 text-xs rounded">Vendas</span>
+                                            <span
+                                                class="px-2 py-1 bg-gray-200 text-gray-600 text-xs rounded">Relacionamento</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- Habilidades -->
-    <section id="habilidades" class="py-20 bg-gray-100 dark:bg-dark z-10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4 reveal">Competências & <span
-                    class="gradient-text">Habilidades</span></h2>
-
-            <div class="grid md:grid-cols-2 gap-12 mb-16">
-                <!-- Tecnologia -->
-                <div class="reveal">
-                    <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-code text-primary mr-3"></i>Tecnologia</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Lógica de Programação</span><span
-                                    class="text-primary">35%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
-                                    style="width: 0%" data-width="35%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Modelagem de Dados & SQL</span><span
-                                    class="text-primary">30%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
-                                    style="width: 0%" data-width="30%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Documentação de Processos</span><span
-                                    class="text-primary">65%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
-                                    style="width: 0%" data-width="65%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Análise -->
-                <div class="reveal">
-                    <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-chart-line text-secondary mr-3"></i>Análise
-                    </h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Interpretação de Dados</span><span
-                                    class="text-secondary">80%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
-                                    style="width: 0%" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Elaboração de Relatórios</span><span
-                                    class="text-secondary">75%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
-                                    style="width: 0%" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Padronização de Rotinas</span><span
-                                    class="text-secondary">85%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
-                                    style="width: 0%" data-width="85%"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Competências Comportamentais -->
-            <div class="reveal mb-12">
-                <h3 class="text-2xl font-semibold mb-6 text-center">Competências Comportamentais</h3>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-brain text-primary"></i><span>Pensamento Analítico</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-sitemap text-primary"></i><span>Visão Sistêmica</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-tasks text-primary"></i><span>Organização</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-users text-primary"></i><span>Trabalho em Equipe</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-comments text-primary"></i><span>Comunicação</span></div>
+
+
+        <!-- Portfólio de Projetos -->
+        <section id="portfolio" class="py-20 bg-gray-50 dark:bg-darker z-10 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-4 reveal">Meu <span class="gradient-text">Portfólio</span>
+                </h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-12 reveal max-w-2xl mx-auto">
+                    Projetos acadêmicos e pessoais desenvolvidos durante a graduação
+                </p>
+
+                <!-- Filtros -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
+                    <button onclick="filterProjects('all')"
+                        class="filter-btn active px-6 py-2 rounded-full glass font-medium transition-all hover:bg-primary hover:text-white"
+                        data-filter="all">Todos</button>
+                    <button onclick="filterProjects('academico')"
+                        class="filter-btn px-6 py-2 rounded-full glass font-medium transition-all hover:bg-primary hover:text-white"
+                        data-filter="academico"><i class="fas fa-graduation-cap mr-2"></i>Acadêmicos</button>
+                    <button onclick="filterProjects('web')"
+                        class="filter-btn px-6 py-2 rounded-full glass font-medium transition-all hover:bg-primary hover:text-white"
+                        data-filter="web"><i class="fas fa-globe mr-2"></i>Web</button>
+                    <button onclick="filterProjects('dados')"
+                        class="filter-btn px-6 py-2 rounded-full glass font-medium transition-all hover:bg-primary hover:text-white"
+                        data-filter="dados"><i class="fas fa-database mr-2"></i>Dados</button>
+                    <button onclick="filterProjects('automation')"
+                        class="filter-btn px-6 py-2 rounded-full glass font-medium transition-all hover:bg-primary hover:text-white"
+                        data-filter="automation"><i class="fas fa-robot mr-2"></i>Automação</button>
+                </div>
+
+                <!-- Grid de Projetos -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+
+                    <!-- Projeto 1 Controle de Estoque -->
+                    <div class="project-card group relative overflow-hidden rounded-2xl glass card-hover reveal"
+                        data-category="academico web">
+                        <div class="aspect-video overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-20 group-hover:opacity-30 transition-opacity">
+                            </div>
+                            <div class="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-800">
+                                <i class="fas fa-clipboard-list text-6xl text-primary opacity-50"></i>
+                            </div>
+
+                            <!-- Tag Em Desenvolvimento -->
+                            <div class="absolute top-4 left-4">
+                                <span
+                                    class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
+                                    <i class="fas fa-code-branch text-[10px]"></i>
+                                    Em Desenvolvimento
+                                </span>
+                            </div>
+
+                            <!-- Tag Acadêmico -->
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">Acadêmico</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Sistema de
+                                Gestão
+                                de Estoque</h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Sistema completo de controle de estoque
+                                com
+                                cadastro de produtos e relatórios.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Node.js</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Express</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">MySQL</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">HTML</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                                <span class="text-sm text-gray-500">2026</span>
+                                <div class="flex space-x-3">
+                                    <a href="#" class="text-gray-400 hover:text-primary"><i
+                                            class="fab fa-github text-lg"></i></a>
+                                    <a href="#" class="text-gray-400 hover:text-primary"><i
+                                            class="fas fa-external-link-alt text-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 2 Dashboard Ambiental de qualidade da água-->
+                    <div class="project-card group relative overflow-hidden rounded-2xl glass card-hover reveal"
+                        data-category="dados automation">
+                        <div class="aspect-video overflow-hidden relative">
+
+                            <!-- THUMBNAIL CLICÁVEL -->
+                            <a href="https://dbqualidadeagua.streamlit.app" target="_blank" rel="noopener noreferrer"
+                                class="block w-full h-full relative group/thumb overflow-hidden rounded-t-2xl">
+                                <img src="assets/Images/thumbnail-agua.png"
+                                    alt="Dashboard de Qualidade da Água - Streamlit" class="w-full h-full object-cover">
+
+                                <!-- Fallback -->
+                                <div
+                                    class="fallback-icon hidden w-full h-full bg-gradient-to-br from-secondary to-accent items-center justify-center">
+                                    <i class="fas fa-chart-bar text-6xl text-white opacity-50"></i>
+                                </div>
+
+                                <!-- Overlay que desliza de baixo -->
+                                <div
+                                    class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-secondary to-secondary/90 p-4 transform translate-y-full group-hover/thumb:translate-y-0 transition-transform duration-300 ease-out">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-white font-semibold text-sm">Ver projeto</span>
+                                        <span
+                                            class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white">
+                                            <i class="fas fa-arrow-up text-xs"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Tag Em Desenvolvimento -->
+                            <div class="absolute top-4 left-4 z-10 pointer-events-none">
+                                <span
+                                    class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
+                                    <i class="fas fa-code-branch text-[10px]"></i>
+                                    1.0
+                                </span>
+                            </div>
+
+                            <!-- Tag Dados -->
+                            <div class="absolute top-4 right-4 z-10 pointer-events-none">
+                                <span
+                                    class="px-3 py-1 bg-secondary text-white text-xs font-bold rounded-full">Dados</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-secondary transition-colors">
+                                <a href="https://dbqualidadeagua.streamlit.app" target="_blank" class="hover:underline">
+                                    Dashboard Ambiental
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                                Dashboard para monitoramento de indicadores de qualidade da água.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="px-3 py-1 text-xs rounded-full bg-secondary/10 text-secondary">Python</span>
+                                <span
+                                    class="px-3 py-1 text-xs rounded-full bg-secondary/10 text-secondary">Streamlit</span>
+                                <span
+                                    class="px-3 py-1 text-xs rounded-full bg-secondary/10 text-secondary">Pandas</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                                <span class="text-sm text-gray-500">2026</span>
+                                <div class="flex space-x-3">
+                                    <a href="https://dbqualidadeagua.streamlit.app" target="_blank"
+                                        class="text-secondary hover:text-primary transition-colors"
+                                        title="Ver projeto ao vivo">
+                                        <i class="fas fa-external-link-alt text-lg"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-400 hover:text-secondary" title="Código no GitHub">
+                                        <i class="fab fa-github text-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 3 -->
+                    <div class="project-card group relative overflow-hidden rounded-2xl glass card-hover reveal"
+                        data-category="web">
+                        <div class="aspect-video overflow-hidden relative">
+                            <!-- THUMBNAIL CLICÁVEL -->
+                            <a href="https://github.com/Rnetoo/portfolio" target="_blank" rel="noopener noreferrer"
+                                class="block w-full h-full relative group/thumb overflow-hidden rounded-t-2xl">
+                                <img src="assets/Images/thumbnail-site.png"
+                                    alt="Dashboard de Qualidade da Água - Streamlit" class="w-full h-full object-cover">
+
+                                <!-- Fallback -->
+                                <div
+                                    class="fallback-icon hidden w-full h-full bg-gradient-to-br from-secondary to-accent items-center justify-center">
+                                    <i class="fas fa-chart-bar text-6xl text-white opacity-50"></i>
+                                </div>
+
+                                <!-- Overlay que desliza de baixo -->
+                                <div
+                                    class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-secondary to-secondary/90 p-4 transform translate-y-full group-hover/thumb:translate-y-0 transition-transform duration-300 ease-out">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-white font-semibold text-sm">Ver projeto</span>
+                                        <span
+                                            class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-white">
+                                            <i class="fas fa-arrow-up text-xs"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors">Portfólio
+                                Profissional</h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Este site! Desenvolvimento de Landing
+                                Page de
+                                apresentação e portfólio com recursos,
+                                responsividade e com modo escuro.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent">HTML5</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent">CSS -
+                                    Tailwind</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent">JavaScript</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent">Dark Mode</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent">Responsivo</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                                <span class="text-sm text-gray-500">2026</span>
+                                <div class="flex space-x-3">
+                                    <a href="https://github.com/Rnetoo" target="_blank"
+                                        class="text-gray-400 hover:text-accent"><i
+                                            class="fab fa-github text-lg"></i></a>
+                                    <a href="#" class="text-gray-400 hover:text-accent"><i
+                                            class="fas fa-globe text-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 4 -->
+                    <div class="project-card group relative overflow-hidden rounded-2xl glass card-hover reveal"
+                        data-category="automation dados">
+                        <div class="aspect-video overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-primary to-accent opacity-20 group-hover:opacity-30 transition-opacity">
+                            </div>
+                            <div class="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-800">
+                                <i class="fas fa-file-excel text-6xl text-primary opacity-50"></i>
+                            </div>
+
+                            <!-- Tag Em Desenvolvimento -->
+                            <div class="absolute top-4 left-4">
+                                <span
+                                    class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
+                                    <i class="fas fa-code-branch text-[10px]"></i>
+                                    Em Desenvolvimento
+                                </span>
+                            </div>
+                            <div class="absolute top-4 right-4"><span
+                                    class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">Automação</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Automatizador
+                                de
+                                Relatórios</h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Script Python para automação de geração
+                                de
+                                relatórios técnicos.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Python</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Pandas</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                                <span class="text-sm text-gray-500">2026</span>
+                                <div class="flex space-x-3">
+                                    <a href="#" class="text-gray-400 hover:text-primary"><i
+                                            class="fab fa-github text-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 5 Micro-SaaS Casa-Quest -->
+                    <div class="project-card group relative overflow-hidden rounded-2xl glass card-hover reveal"
+                        data-category="automation dados">
+                        <div class="aspect-video overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-primary to-accent opacity-20 group-hover:opacity-30 transition-opacity">
+                            </div>
+                            <div class="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-800">
+                                <i class="fas fa-file-excel text-6xl text-primary opacity-50"></i>
+                            </div>
+
+                            <!-- Tag Em Desenvolvimento -->
+                            <div class="absolute top-4 left-4">
+                                <span
+                                    class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center gap-1.5 shadow-lg">
+                                    <i class="fas fa-code-branch text-[10px]"></i>
+                                    Em Desenvolvimento
+                                </span>
+                            </div>
+                            <div class="absolute top-4 right-4"><span
+                                    class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">SaaS</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Micro SaaS de
+                                Gestão de tarefas doméstcas GAMEFICADO</h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Estudo e aplicação de FrontEnd, BackEnd,
+                                GateWay de Pagameto, Analytics e Notificações. Migração Mobile</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">React
+                                    Native</span>
+                                <span
+                                    class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">PostgreSQL</span>
+                                <span
+                                    class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">RevenueCat</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">Mixpanel</span>
+                                <span class="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary">OneSignal</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                                <span class="text-sm text-gray-500">2026</span>
+                                <div class="flex space-x-3">
+                                    <a href="#" class="text-gray-400 hover:text-primary"><i
+                                            class="fab fa-github text-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CTA GitHub -->
+                <div class="mt-16 text-center reveal">
+                    <a href="https://github.com/Rnetoo" target="_blank"
+                        class="inline-flex items-center space-x-3 px-8 py-4 bg-gray-900 dark:bg-gray-800 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all">
+                        <i class="fab fa-github text-2xl"></i>
+                        <span>Ver todos no GitHub</span>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Habilidades -->
+        <section id="habilidades" class="py-20 bg-gray-100 dark:bg-dark z-10 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-4 reveal">Competências & <span
+                        class="gradient-text">Habilidades</span></h2>
 
-
-    <!-- Modal -->
-    <div id="add-project-modal"
-        class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
-        <div class="glass rounded-2xl p-8 max-w-md w-full transform scale-95 opacity-0 transition-all duration-300"
-            id="modal-content">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-2xl font-bold">Adicionar Novo Projeto</h3>
-                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700"><i
-                        class="fas fa-times text-xl"></i></button>
-            </div>
-            <p class="text-gray-600 mb-6">Edite o arquivo <code
-                    class="bg-gray-200 px-2 py-1 rounded text-sm">index.html</code> na seção Portfólio.</p>
-            <button onclick="closeModal()"
-                class="w-full py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors">Entendi</button>
-        </div>
-    </div>
-
-    <!-- Formação Acadêmica -->
-    <section id="formacao" class="py-20 z-10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4 reveal">Formação <span class="gradient-text">Acadêmica</span>
-            </h2>
-            <p class="text-center text-gray-600 dark:text-gray-400 mb-12 reveal">Educação formal multidisciplinar</p>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Formação 1 -->
-                <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-primary relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-                        EM ANDAMENTO</div>
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-laptop-code text-3xl text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Análise e Desenvolvimento de Sistemas</h3>
-                    <p class="text-primary font-semibold mb-2">Estácio</p>
-                    <p class="text-gray-600 text-sm mb-4">Graduação tecnológica focada em desenvolvimento de software e
-                        banco de dados.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Lógica</span>
-                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Banco de Dados</span>
-                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Software</span>
-                    </div>
-                </div>
-
-                <!-- Formação 2 -->
-                <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-secondary">
-                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-pencil-ruler text-3xl text-secondary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Tecnólogo em Design de Interiores</h3>
-                    <p class="text-secondary font-semibold mb-2">SENAC</p>
-                    <p class="text-gray-600 text-sm mb-4">Formação em design, desenho técnico CAD e modelagem 3D.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">CAD</span>
-                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">3D</span>
-                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Design</span>
-                    </div>
-                </div>
-
-                <!-- Formação 3 -->
-                <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-accent">
-                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-leaf text-3xl text-accent"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Técnico em Meio Ambiente</h3>
-                    <p class="text-accent font-semibold mb-2">SENAI</p>
-                    <p class="text-gray-600 text-sm mb-4">Formação técnica em gestão ambiental e controle de ETA/ETE.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Ambiental</span>
-                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">ETE/ETA</span>
-                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Laboratório</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contato" class="py-20 z-10 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4 reveal">Vamos <span class="gradient-text">Conectar</span>
-            </h2>
-
-            <div class="grid md:grid-cols-2 gap-8 reveal">
-                <!-- Informações -->
-                <div class="glass rounded-2xl p-8">
-                    <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center"><i
-                                    class="fas fa-map-marker-alt text-primary text-xl"></i></div>
+                <div class="grid md:grid-cols-2 gap-12 mb-16">
+                    <!-- Tecnologia -->
+                    <div class="reveal">
+                        <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-code text-primary mr-3"></i>Tecnologia
+                        </h3>
+                        <div class="space-y-4">
                             <div>
-                                <h4 class="font-semibold">Localização</h4>
-                                <p class="text-gray-600">Balneário Piçarras, SC</p>
+                                <div class="flex justify-between mb-1"><span>Lógica de Programação</span><span
+                                        class="text-primary">35%</span></div>
+                                <div class="w-full bg-gray-300 rounded-full h-2">
+                                    <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
+                                        style="width: 0%" data-width="35%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1"><span>Modelagem de Dados & SQL</span><span
+                                        class="text-primary">30%</span></div>
+                                <div class="w-full bg-gray-300 rounded-full h-2">
+                                    <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
+                                        style="width: 0%" data-width="30%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1"><span>Documentação de Processos</span><span
+                                        class="text-primary">65%</span></div>
+                                <div class="w-full bg-gray-300 rounded-full h-2">
+                                    <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
+                                        style="width: 0%" data-width="65%"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center"><i
-                                    class="fas fa-phone text-primary text-xl"></i></div>
+                    </div>
+
+                    <!-- Análise -->
+                    <div class="reveal">
+                        <h3 class="text-2xl font-semibold mb-6"><i
+                                class="fas fa-chart-line text-secondary mr-3"></i>Análise
+                        </h3>
+                        <div class="space-y-4">
                             <div>
-                                <h4 class="font-semibold">Telefone</h4><a href="tel:+5549999083606"
-                                    class="text-gray-600 hover:text-primary">(49) 99908-3606</a>
+                                <div class="flex justify-between mb-1"><span>Interpretação de Dados</span><span
+                                        class="text-secondary">80%</span></div>
+                                <div class="w-full bg-gray-300 rounded-full h-2">
+                                    <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
+                                        style="width: 0%" data-width="80%"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center"><i
-                                    class="fas fa-envelope text-primary text-xl"></i></div>
                             <div>
-                                <h4 class="font-semibold">Email</h4><a href="mailto:romulo.psnw@gmail.com"
-                                    class="text-gray-600 hover:text-primary">romulo.psnw@gmail.com</a>
+                                <div class="flex justify-between mb-1"><span>Elaboração de Relatórios</span><span
+                                        class="text-secondary">75%</span></div>
+                                <div class="w-full bg-gray-300 rounded-full h-2">
+                                    <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
+                                        style="width: 0%" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1"><span>Padronização de Rotinas</span><span
+                                        class="text-secondary">85%</span></div>
+                                <div class="w-full bg-gray-300 rounded-full h-2">
+                                    <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
+                                        style="width: 0%" data-width="85%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Formulário com Formspree -->
-                <div class="glass rounded-2xl p-8">
-                    <h3 class="text-2xl font-bold mb-6">Envie uma mensagem</h3>
-
-                    <form action="https://formspree.io/f/xaqdowby" method="POST" class="space-y-4">
-
-                        <div>
-                            <label class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Nome</label>
-                            <input type="text" name="nome" required
-                                class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors"
-                                placeholder="Seu nome completo">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Email</label>
-                            <input type="email" name="email" required
-                                class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors"
-                                placeholder="seu@email.com">
-                        </div>
-
-                        <div>
-                            <label
-                                class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Assunto</label>
-                            <select name="assunto"
-                                class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors">
-                                <option>Oportunidade de emprego</option>
-                                <option>Projeto freelance</option>
-                                <option>Networking</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label
-                                class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Mensagem</label>
-                            <textarea name="mensagem" rows="4" required
-                                class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors resize-none"
-                                placeholder="Sua mensagem..."></textarea>
-                        </div>
-
-                        <input type="hidden" name="_subject" value="Novo contato do portfólio!">
-                        <input type="hidden" name="_replyto" value="romulo.psnw@gmail.com">
-                        <input type="hidden" name="_next" value="https://rnetoo.github.io/obrigado.html">
-
-                        <button type="submit"
-                            class="w-full py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-semibold hover:shadow-lg transition-all flex items-center justify-center space-x-2 group">
-                            <span>Enviar Mensagem</span>
-                            <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform"></i>
-                        </button>
-
-                    </form>
-
-                    <p class="text-sm text-gray-500 mt-4 text-center">
-                        Ou envie direto para <a href="mailto:romulo.psnw@gmail.com"
-                            class="text-primary hover:underline">romulo.psnw@gmail.com</a>
-                    </p>
+                <!-- Competências Comportamentais -->
+                <div class="reveal mb-12">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">Competências Comportamentais</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                                class="fas fa-brain text-primary"></i><span>Pensamento Analítico</span></div>
+                        <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                                class="fas fa-sitemap text-primary"></i><span>Visão Sistêmica</span></div>
+                        <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                                class="fas fa-tasks text-primary"></i><span>Organização</span></div>
+                        <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                                class="fas fa-users text-primary"></i><span>Trabalho em Equipe</span></div>
+                        <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                                class="fas fa-comments text-primary"></i><span>Comunicação</span></div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+
+
+        <!-- Modal -->
+        <div id="add-project-modal"
+            class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+            <div class="glass rounded-2xl p-8 max-w-md w-full transform scale-95 opacity-0 transition-all duration-300"
+                id="modal-content">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold">Adicionar Novo Projeto</h3>
+                    <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700"><i
+                            class="fas fa-times text-xl"></i></button>
+                </div>
+                <p class="text-gray-600 mb-6">Edite o arquivo <code
+                        class="bg-gray-200 px-2 py-1 rounded text-sm">index.html</code> na seção Portfólio.</p>
+                <button onclick="closeModal()"
+                    class="w-full py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors">Entendi</button>
+            </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer
-        class="py-12 text-center text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-dark">
-        <div class="max-w-7xl mx-auto px-4">
+        <!-- Formação Acadêmica -->
+        <section id="formacao" class="py-20 z-10 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-4 reveal">Formação <span
+                        class="gradient-text">Acadêmica</span>
+                </h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-12 reveal">Educação formal multidisciplinar
+                </p>
 
-            <!-- Logo centralizado -->
-            <div class="flex justify-center items-center mb-8">
-                <a href="#home" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Formação 1 -->
                     <div
-                        class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold font-mono text-sm shadow-lg hover:shadow-primary/40 transition-all duration-300 hover:scale-105">
-                        <span>&lt;R.N/&gt;</span>
+                        class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-primary relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            EM ANDAMENTO</div>
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-laptop-code text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Análise e Desenvolvimento de Sistemas</h3>
+                        <p class="text-primary font-semibold mb-2">Estácio</p>
+                        <p class="text-gray-600 text-sm mb-4">Graduação tecnológica focada em desenvolvimento de
+                            software e
+                            banco de dados.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Lógica</span>
+                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Banco de Dados</span>
+                            <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Software</span>
+                        </div>
                     </div>
-                    <span class="text-xl font-bold gradient-text">Rômulo.Neto</span>
-                </a>
+
+                    <!-- Formação 2 -->
+                    <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-secondary">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-pencil-ruler text-3xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Tecnólogo em Design de Interiores</h3>
+                        <p class="text-secondary font-semibold mb-2">SENAC</p>
+                        <p class="text-gray-600 text-sm mb-4">Formação em design, desenho técnico CAD e modelagem 3D.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">CAD</span>
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">3D</span>
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Formação 3 -->
+                    <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-accent">
+                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-leaf text-3xl text-accent"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Técnico em Meio Ambiente</h3>
+                        <p class="text-accent font-semibold mb-2">SENAI</p>
+                        <p class="text-gray-600 text-sm mb-4">Formação técnica em gestão ambiental e controle de
+                            ETA/ETE.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Ambiental</span>
+                            <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">ETE/ETA</span>
+                            <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Laboratório</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Links rápidos -->
-            <div class="flex flex-wrap justify-center gap-6 mb-8 text-sm">
-                <a href="#home" class="hover:text-primary transition-colors">Início</a>
-                <a href="#sobre" class="hover:text-primary transition-colors">Sobre</a>
-                <a href="#portfolio" class="hover:text-primary transition-colors">Projetos</a>
-                <a href="#contato" class="hover:text-primary transition-colors">Contato</a>
+        <!-- Contato -->
+        <section id="contato" class="py-20 z-10 relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-4 reveal">Vamos <span class="gradient-text">Conectar</span>
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8 reveal">
+                    <!-- Informações -->
+                    <div class="glass rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center"><i
+                                        class="fas fa-map-marker-alt text-primary text-xl"></i></div>
+                                <div>
+                                    <h4 class="font-semibold">Localização</h4>
+                                    <p class="text-gray-600">Balneário Piçarras, SC</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center"><i
+                                        class="fas fa-phone text-primary text-xl"></i></div>
+                                <div>
+                                    <h4 class="font-semibold">Telefone</h4><a href="tel:+5549999083606"
+                                        class="text-gray-600 hover:text-primary">(49) 99908-3606</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center"><i
+                                        class="fas fa-envelope text-primary text-xl"></i></div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4><a href="mailto:romulo.psnw@gmail.com"
+                                        class="text-gray-600 hover:text-primary">romulo.psnw@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário com Formspree -->
+                    <div class="glass rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-6">Envie uma mensagem</h3>
+
+                        <form action="https://formspree.io/f/xaqdowby" method="POST" class="space-y-4">
+
+                            <div>
+                                <label
+                                    class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Nome</label>
+                                <input type="text" name="nome" required
+                                    class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors"
+                                    placeholder="Seu nome completo">
+                            </div>
+
+                            <div>
+                                <label
+                                    class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Email</label>
+                                <input type="email" name="email" required
+                                    class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors"
+                                    placeholder="seu@email.com">
+                            </div>
+
+                            <div>
+                                <label
+                                    class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Assunto</label>
+                                <select name="assunto"
+                                    class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors">
+                                    <option>Oportunidade de emprego</option>
+                                    <option>Projeto freelance</option>
+                                    <option>Networking</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label
+                                    class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Mensagem</label>
+                                <textarea name="mensagem" rows="4" required
+                                    class="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-dark/50 border border-gray-300 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors resize-none"
+                                    placeholder="Sua mensagem..."></textarea>
+                            </div>
+
+                            <input type="hidden" name="_subject" value="Novo contato do portfólio!">
+                            <input type="hidden" name="_replyto" value="romulo.psnw@gmail.com">
+                            <input type="hidden" name="_next" value="https://rnetoo.github.io/obrigado.html">
+
+                            <button type="submit"
+                                class="w-full py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-semibold hover:shadow-lg transition-all flex items-center justify-center space-x-2 group">
+                                <span>Enviar Mensagem</span>
+                                <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+
+                        </form>
+
+                        <p class="text-sm text-gray-500 mt-4 text-center">
+                            Ou envie direto para <a href="mailto:romulo.psnw@gmail.com"
+                                class="text-primary hover:underline">romulo.psnw@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Redes sociais -->
-            <div class="flex justify-center gap-4 mb-8">
-                <a href="https://www.linkedin.com/in/romulo-pereira-de-souza-neto/" target="_blank"
-                    class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/Rnetoo" target="_blank"
-                    class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:romulo.psnw@gmail.com"
-                    class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-                    <i class="fas fa-envelope"></i>
-                </a>
+        <!-- Footer -->
+        <footer
+            class="py-12 text-center text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-dark">
+            <div class="max-w-7xl mx-auto px-4">
+
+                <!-- Logo centralizado -->
+                <div class="flex justify-center items-center mb-8">
+                    <a href="#home" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold font-mono text-sm shadow-lg hover:shadow-primary/40 transition-all duration-300 hover:scale-105">
+                            <span>&lt;R.N/&gt;</span>
+                        </div>
+                        <span class="text-xl font-bold gradient-text">Rômulo.Neto</span>
+                    </a>
+                </div>
+
+                <!-- Links rápidos -->
+                <div class="flex flex-wrap justify-center gap-6 mb-8 text-sm">
+                    <a href="#home" class="hover:text-primary transition-colors">Início</a>
+                    <a href="#sobre" class="hover:text-primary transition-colors">Sobre</a>
+                    <a href="#portfolio" class="hover:text-primary transition-colors">Projetos</a>
+                    <a href="#contato" class="hover:text-primary transition-colors">Contato</a>
+                </div>
+
+                <!-- Redes sociais -->
+                <div class="flex justify-center gap-4 mb-8">
+                    <a href="https://www.linkedin.com/in/romulo-pereira-de-souza-neto/" target="_blank"
+                        class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Rnetoo" target="_blank"
+                        class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:romulo.psnw@gmail.com"
+                        class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <!-- Copyright -->
+                <p class="text-sm mb-2">&copy; 2026 Rômulo Pereira de Souza Neto Wisniewski</p>
+                <p class="text-xs text-gray-500">Desenvolvido com HTML, Tailwind CSS & JavaScript</p>
             </div>
+        </footer>
 
-            <!-- Copyright -->
-            <p class="text-sm mb-2">&copy; 2026 Rômulo Pereira de Souza Neto Wisniewski</p>
-            <p class="text-xs text-gray-500">Desenvolvido com HTML, Tailwind CSS & JavaScript</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/typing.js"></script>
-    <script src="js/portfolio.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/i18n.js"></script>
+        <!-- Scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/typing.js"></script>
+        <script src="js/portfolio.js"></script>
+        <script src="js/animations.js"></script>
+        <script src="js/i18n.js"></script>
 </body>
 
 </html>
