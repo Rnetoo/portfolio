@@ -59,71 +59,110 @@
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass transition-all duration-300" id="navbar">
+    <!-- NavBar Versão melhorada -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white dark:bg-neutral-950 border-b border-neutral-200 dark:border-neutral-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
 
+                <!-- Marca -->
+                <!-- Logo  -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-9 h-9 rounded-md bg-gradient-to-br from-primary to-secondary 
+               flex items-center justify-center 
+               text-white font-mono text-xs tracking-wide
+               transition-all duration-300
+               group-hover:opacity-90">
+                        &lt;RN/&gt;
+                    </div>
+                </a>
 
-        <!-- Links de navegação + Botão idioma -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-            <div class="flex justify-between items-center h-12">
                 <!-- Links -->
-                <div class="hidden md:flex space-x-6">
-                    <a href="#home" data-i18n="nav-inicio"
-                        class="hover:text-primary transition-colors text-sm font-medium">Início</a>
-                    <a href="#sobre" data-i18n="nav-sobre"
-                        class="hover:text-primary transition-colors text-sm font-medium">Sobre</a>
-                    <a href="#experiencia" data-i18n="nav-experiencia"
-                        class="hover:text-primary transition-colors text-sm font-medium">Experiência</a>
-                    <a href="#formacao" data-i18n="nav-formacao"
-                        class="hover:text-primary transition-colors text-sm font-medium">Formação</a>
-                    <a href="#portfolio" data-i18n="nav-portfolio"
-                        class="hover:text-primary transition-colors text-sm font-medium">Portfólio</a>
-                    <a href="#habilidades" data-i18n="nav-habilidades"
-                        class="hover:text-primary transition-colors text-sm font-medium">Habilidades</a>
-                    <a href="#contato" data-i18n="nav-contato"
-                        class="hover:text-primary transition-colors text-sm font-medium">Contato</a>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#home"
+                        class="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">Início</a>
+                    <a href="#sobre"
+                        class="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">Sobre</a>
+                    <a href="#experiencia"
+                        class="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">Experiência</a>
+                    <a href="#portfolio"
+                        class="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">Portfólio</a>
+                    <a href="#contato"
+                        class="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">Contato</a>
                 </div>
 
-                <!-- Botões direita -->
-                <div class="flex items-center gap-3">
-                    <!-- Botão de idioma -->
-                    <button id="lang-toggle" onclick="toggleLanguage()"
-                        class="px-3 py-1.5 rounded-lg bg-primary/10 text-primary text-sm font-semibold hover:bg-primary/20 transition-colors flex items-center">
-                        <i class="fas fa-globe mr-2"></i>EN
-                    </button>
-
-                    <!-- Tema -->
-                    <button onclick="toggleTheme()"
-                        class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
-                        <i class="fas fa-sun hidden dark:block"></i>
-                        <i class="fas fa-moon block dark:hidden"></i>
-                    </button>
-
-                    <!-- Menu mobile -->
-                    <button onclick="toggleMenu()" class="md:hidden p-2">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
             </div>
         </div>
+    </nav>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden glass border-t">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#home" class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Início</a>
-                <a href="#sobre" class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Sobre</a>
-                <a href="#experiencia"
-                    class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Experiência</a>
-                <a href="#formacao"
-                    class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Formação</a>
-                <a href="#portfolio"
-                    class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Portfólio</a>
-                <a href="#habilidades"
-                    class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Habilidades</a>
-                <a href="#contato"
-                    class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Contato</a>
+
+    <!-- Links de navegação + Botão idioma -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+        <div class="flex justify-between items-center h-12">
+            <!-- Links -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" data-i18n="nav-inicio"
+                    class="hover:text-primary transition-colors text-sm font-medium">Início</a>
+
+                <a href="#sobre" data-i18n="nav-sobre"
+                    class="hover:text-primary transition-colors text-sm font-medium">Sobre</a>
+
+                <a href="#experiencia" data-i18n="nav-experiencia"
+                    class="hover:text-primary transition-colors text-sm font-medium">Experiência</a>
+
+                <a href="#portfolio" data-i18n="nav-portfolio"
+                    class="hover:text-primary transition-colors text-sm font-medium">Portfólio</a>
+
+                <a href="#habilidades" data-i18n="nav-habilidades"
+                    class="hover:text-primary transition-colors text-sm font-medium">Habilidades</a>
+
+                <a href="#formacao" data-i18n="nav-formacao"
+                    class="hover:text-primary transition-colors text-sm font-medium">Formação</a>
+
+                <a href="#contato" data-i18n="nav-contato"
+                    class="hover:text-primary transition-colors text-sm font-medium">Contato</a>
             </div>
         </div>
+    </div>
+
+    <!-- Botões direita -->
+    <div class="flex items-center gap-3">
+        <!-- Botão de idioma -->
+        <button id="lang-toggle" onclick="toggleLanguage()"
+            class="px-3 py-1.5 rounded-lg bg-primary/10 text-primary text-sm font-semibold hover:bg-primary/20 transition-colors flex items-center">
+            <i class="fas fa-globe mr-2"></i>EN
+        </button>
+
+        <!-- Tema -->
+        <button onclick="toggleTheme()"
+            class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+            <i class="fas fa-sun hidden dark:block"></i>
+            <i class="fas fa-moon block dark:hidden"></i>
+        </button>
+
+        <!-- Menu mobile -->
+        <button onclick="toggleMenu()" class="md:hidden p-2">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden glass border-t">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#home" class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Início</a>
+            <a href="#sobre" class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Sobre</a>
+            <a href="#experiencia"
+                class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Experiência</a>
+            <a href="#formacao" class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Formação</a>
+            <a href="#portfolio"
+                class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Portfólio</a>
+            <a href="#habilidades"
+                class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Habilidades</a>
+            <a href="#contato" class="block px-3 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800">Contato</a>
+        </div>
+    </div>
     </nav>
 
     <!-- Hero Section -->
@@ -168,10 +207,11 @@
                     <i class="fas fa-light fa-compass"></i>
                     <span>Foco em experiência, estrutura e construção de soluções digitais consistentes.</span>
                 </div>
-                       <!--<<i class="fa-light fa-compass"></i>-->
+                <!--<<i class="fa-light fa-compass"></i>-->
                 <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-                    Desenvolvedor focado em front-end,  
-                    <span class="text-primary font-semibold border-b-2 border-primary/30">com fundamentos full stack</span>
+                    Desenvolvedor focado em front-end,
+                    <span class="text-primary font-semibold border-b-2 border-primary/30">com fundamentos full
+                        stack</span>
                     e abordagem estruturada para construção de produtos digitais.
                 </p>
 
@@ -257,33 +297,39 @@
                     </div>
 
                     <p class="text-lg text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
-                        Sou um profissional com trajetória consolidada em desenvolvimento de projetos, gestão de
-                        processos e controle operacional, atualmente em <strong>transição estruturada para a área de
-                            Tecnologia da Informação</strong>, com foco em Desenvolvimento Full Stack.
+                        Sou desenvolvedor com foco em Front-End, atuando com visão Full Stack, com trajetória
+                        consolidada em desenvolvimento de projetos,
+                        gestão de processos e controle operacional em áreas atreladas à Qualidade e Meio Ambiente.
+                        Essa base profissional estruturada fortalece minha atuação em TI,
+                        unindo organização, responsabilidade e pensamento sistêmico na construção de soluções digitais.
                     </p>
 
                     <p class="text-lg text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
                         Minha carreira foi construída em ambientes que exigem <strong>organização, análise, documentação
-                            técnica e responsabilidade na execução</strong>. Ao longo dos anos, atuei com planejamento
-                        de escopo, controle de prazos, padronização de processos e tomada de decisão orientada por dados
-                        — competências que hoje sustentam minha formação em desenvolvimento de software.
+                            técnica e responsabilidade na execução</strong>.
+                        Atuei com planejamento de escopo, controle de prazos, padronização de processos e tomada de
+                        decisão orientada por dados —
+                        competências que hoje aplico diretamente no desenvolvimento de software e na estruturação de
+                        aplicações web.
                     </p>
 
                     <p class="text-lg text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
-                        Minha migração para TI representa um novo direcionamento profissional. Estou em processo
-                        contínuo de aprendizado técnico, aprofundando conhecimentos em <strong>desenvolvimento web,
-                            arquitetura de aplicações e boas práticas de código</strong>, ao mesmo tempo em que aplico
-                        esses conceitos na construção dos meus próprios projetos — incluindo este site.
+                        Minha atuação em tecnologia está centrada na construção de <strong>interfaces consistentes, bem
+                            estruturadas e orientadas à experiência do usuário</strong>,
+                        aplicando boas práticas de código, princípios de arquitetura e organização lógica.
+                        Mantenho evolução técnica contínua em desenvolvimento web e arquitetura de aplicações,
+                        sempre aplicando esses conhecimentos na construção de projetos próprios — incluindo este
+                        portfólio.
                     </p>
 
                     <div class="glass p-6 rounded-xl border-l-4 border-primary mb-6 bg-primary/5">
                         <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
                             <i class="fas fa-lightbulb text-primary mr-2"></i>
-                            Reconheço que estou em evolução na área técnica, mas trago como diferencial
-                            <strong>maturidade profissional, disciplina, visão estruturada de projeto e compromisso com
-                                qualidade</strong>. Meu objetivo é integrar equipes onde eu possa contribuir com
-                            organização, responsabilidade e aprendizado constante, desenvolvendo-me como profissional de
-                            tecnologia de forma consistente.
+                            Trago como diferencial <strong>maturidade profissional, disciplina, visão estruturada de
+                                projeto e compromisso com qualidade</strong>.
+                            Busco integrar equipes onde possa contribuir com organização, clareza técnica e construção
+                            consistente de produtos digitais,
+                            consolidando minha atuação como desenvolvedor de forma sólida e sustentável.
                         </p>
                     </div>
 
@@ -623,155 +669,7 @@
         </div>
     </section>
 
-    <!-- Formação Acadêmica -->
-    <section id="formacao" class="py-20 z-10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4 reveal">Formação <span class="gradient-text">Acadêmica</span>
-            </h2>
-            <p class="text-center text-gray-600 dark:text-gray-400 mb-12 reveal">Educação formal multidisciplinar</p>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Formação 1 -->
-                <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-primary relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-                        EM ANDAMENTO</div>
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-laptop-code text-3xl text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Análise e Desenvolvimento de Sistemas</h3>
-                    <p class="text-primary font-semibold mb-2">Estácio</p>
-                    <p class="text-gray-600 text-sm mb-4">Graduação tecnológica focada em desenvolvimento de software e
-                        banco de dados.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Lógica</span>
-                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Banco de Dados</span>
-                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Software</span>
-                    </div>
-                </div>
-
-                <!-- Formação 2 -->
-                <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-secondary">
-                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-pencil-ruler text-3xl text-secondary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Tecnólogo em Design de Interiores</h3>
-                    <p class="text-secondary font-semibold mb-2">SENAC</p>
-                    <p class="text-gray-600 text-sm mb-4">Formação em design, desenho técnico CAD e modelagem 3D.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">CAD</span>
-                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">3D</span>
-                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Design</span>
-                    </div>
-                </div>
-
-                <!-- Formação 3 -->
-                <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-accent">
-                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-leaf text-3xl text-accent"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Técnico em Meio Ambiente</h3>
-                    <p class="text-accent font-semibold mb-2">SENAI</p>
-                    <p class="text-gray-600 text-sm mb-4">Formação técnica em gestão ambiental e controle de ETA/ETE.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Ambiental</span>
-                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">ETE/ETA</span>
-                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Laboratório</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Habilidades -->
-    <section id="habilidades" class="py-20 bg-gray-100 dark:bg-dark z-10 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4 reveal">Competências & <span
-                    class="gradient-text">Habilidades</span></h2>
-
-            <div class="grid md:grid-cols-2 gap-12 mb-16">
-                <!-- Tecnologia -->
-                <div class="reveal">
-                    <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-code text-primary mr-3"></i>Tecnologia</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Lógica de Programação</span><span
-                                    class="text-primary">35%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
-                                    style="width: 0%" data-width="35%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Modelagem de Dados & SQL</span><span
-                                    class="text-primary">30%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
-                                    style="width: 0%" data-width="30%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Documentação de Processos</span><span
-                                    class="text-primary">65%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
-                                    style="width: 0%" data-width="65%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Análise -->
-                <div class="reveal">
-                    <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-chart-line text-secondary mr-3"></i>Análise
-                    </h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Interpretação de Dados</span><span
-                                    class="text-secondary">80%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
-                                    style="width: 0%" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Elaboração de Relatórios</span><span
-                                    class="text-secondary">75%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
-                                    style="width: 0%" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1"><span>Padronização de Rotinas</span><span
-                                    class="text-secondary">85%</span></div>
-                            <div class="w-full bg-gray-300 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
-                                    style="width: 0%" data-width="85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Competências Comportamentais -->
-            <div class="reveal mb-12">
-                <h3 class="text-2xl font-semibold mb-6 text-center">Competências Comportamentais</h3>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-brain text-primary"></i><span>Pensamento Analítico</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-sitemap text-primary"></i><span>Visão Sistêmica</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-tasks text-primary"></i><span>Organização</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-users text-primary"></i><span>Trabalho em Equipe</span></div>
-                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
-                            class="fas fa-comments text-primary"></i><span>Comunicação</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Portfólio de Projetos -->
     <section id="portfolio" class="py-20 bg-gray-50 dark:bg-darker z-10 relative">
@@ -1081,6 +979,98 @@
         </div>
     </section>
 
+    <!-- Habilidades -->
+    <section id="habilidades" class="py-20 bg-gray-100 dark:bg-dark z-10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4 reveal">Competências & <span
+                    class="gradient-text">Habilidades</span></h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <!-- Tecnologia -->
+                <div class="reveal">
+                    <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-code text-primary mr-3"></i>Tecnologia</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Lógica de Programação</span><span
+                                    class="text-primary">35%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
+                                    style="width: 0%" data-width="35%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Modelagem de Dados & SQL</span><span
+                                    class="text-primary">30%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
+                                    style="width: 0%" data-width="30%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Documentação de Processos</span><span
+                                    class="text-primary">65%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-primary to-secondary h-2 rounded-full"
+                                    style="width: 0%" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Análise -->
+                <div class="reveal">
+                    <h3 class="text-2xl font-semibold mb-6"><i class="fas fa-chart-line text-secondary mr-3"></i>Análise
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Interpretação de Dados</span><span
+                                    class="text-secondary">80%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
+                                    style="width: 0%" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Elaboração de Relatórios</span><span
+                                    class="text-secondary">75%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
+                                    style="width: 0%" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span>Padronização de Rotinas</span><span
+                                    class="text-secondary">85%</span></div>
+                            <div class="w-full bg-gray-300 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-secondary to-primary h-2 rounded-full"
+                                    style="width: 0%" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competências Comportamentais -->
+            <div class="reveal mb-12">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Competências Comportamentais</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                            class="fas fa-brain text-primary"></i><span>Pensamento Analítico</span></div>
+                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                            class="fas fa-sitemap text-primary"></i><span>Visão Sistêmica</span></div>
+                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                            class="fas fa-tasks text-primary"></i><span>Organização</span></div>
+                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                            class="fas fa-users text-primary"></i><span>Trabalho em Equipe</span></div>
+                    <div class="glass px-6 py-3 rounded-full flex items-center space-x-2 tech-tag"><i
+                            class="fas fa-comments text-primary"></i><span>Comunicação</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Modal -->
     <div id="add-project-modal"
         class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
@@ -1097,6 +1087,66 @@
                 class="w-full py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors">Entendi</button>
         </div>
     </div>
+
+    <!-- Formação Acadêmica -->
+    <section id="formacao" class="py-20 z-10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4 reveal">Formação <span class="gradient-text">Acadêmica</span>
+            </h2>
+            <p class="text-center text-gray-600 dark:text-gray-400 mb-12 reveal">Educação formal multidisciplinar</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Formação 1 -->
+                <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-primary relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                        EM ANDAMENTO</div>
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-laptop-code text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Análise e Desenvolvimento de Sistemas</h3>
+                    <p class="text-primary font-semibold mb-2">Estácio</p>
+                    <p class="text-gray-600 text-sm mb-4">Graduação tecnológica focada em desenvolvimento de software e
+                        banco de dados.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Lógica</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Banco de Dados</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Software</span>
+                    </div>
+                </div>
+
+                <!-- Formação 2 -->
+                <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-secondary">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-pencil-ruler text-3xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Tecnólogo em Design de Interiores</h3>
+                    <p class="text-secondary font-semibold mb-2">SENAC</p>
+                    <p class="text-gray-600 text-sm mb-4">Formação em design, desenho técnico CAD e modelagem 3D.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">CAD</span>
+                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">3D</span>
+                        <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded">Design</span>
+                    </div>
+                </div>
+
+                <!-- Formação 3 -->
+                <div class="glass rounded-2xl p-8 card-hover reveal border-t-4 border-accent">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-3xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Técnico em Meio Ambiente</h3>
+                    <p class="text-accent font-semibold mb-2">SENAI</p>
+                    <p class="text-gray-600 text-sm mb-4">Formação técnica em gestão ambiental e controle de ETA/ETE.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Ambiental</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">ETE/ETA</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Laboratório</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contato -->
     <section id="contato" class="py-20 z-10 relative">
