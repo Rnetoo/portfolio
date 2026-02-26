@@ -1,46 +1,95 @@
-/* Fonte base */
-body {
-    font-family: 'Inter', sans-serif;
+/* ============================= */
+/*  BASE                         */
+/* ============================= */
+
+:root {
+    --primary: #0f766e;        /* Verde profundo */
+    --primary-light: #10b981;  /* Esmeralda */
+    --secondary: #1e3a8a;      /* Azul autoridade */
+    --accent: #d4af37;         /* Dourado prosperidade */
+    --dark-bg: #0f172a;
+    --light-bg: #f8fafc;
 }
 
-/* Efeito vidro */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-bg);
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+}
+
+.dark body {
+    background-color: var(--dark-bg);
+    color: #e2e8f0;
+}
+
+/* ============================= */
+/*  GLASS EFFECT PREMIUM         */
+/* ============================= */
+
 .glass {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .dark .glass {
-    background: rgba(15, 23, 42, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Texto gradiente */
+/* ============================= */
+/*  GRADIENT TEXT RIQUEZA        */
+/* ============================= */
+
 .gradient-text {
-    background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #0891b2 100%);
+    background: linear-gradient(
+        135deg,
+        var(--primary-light) 0%,
+        var(--primary) 40%,
+        var(--secondary) 80%,
+        var(--accent) 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-/* Hover em cards */
+/* ============================= */
+/*  CARDS                        */
+/* ============================= */
+
 .card-hover {
-    transition: all 0.3s ease;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-hover:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px -15px rgba(5, 150, 105, 0.3);
+    transform: translateY(-8px);
+    box-shadow:
+        0 25px 50px -12px rgba(16, 185, 129, 0.25),
+        0 10px 20px -5px rgba(0, 0, 0, 0.08);
 }
 
-/* Timeline */
+/* ============================= */
+/*  TIMELINE                     */
+/* ============================= */
+
 .timeline-line {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 2px;
+    width: 3px;
     height: 100%;
-    background: linear-gradient(to bottom, #059669, #0d9488);
+    background: linear-gradient(
+        to bottom,
+        var(--primary-light),
+        var(--secondary)
+    );
+    opacity: 0.6;
 }
 
 @media (max-width: 768px) {
@@ -49,33 +98,92 @@ body {
     }
 }
 
-/* Animação de habilidades */
+/* ============================= */
+/*  SKILLS                       */
+/* ============================= */
+
 .skill-bar {
-    transition: width 1.5s ease-out;
+    height: 8px;
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        var(--primary-light),
+        var(--secondary)
+    );
+    transition: width 1.8s ease-out;
 }
 
-/* Tags de tecnologia */
+/* ============================= */
+/*  TECH TAGS                    */
+/* ============================= */
+
 .tech-tag {
     transition: all 0.3s ease;
+    border-radius: 999px;
+    padding: 6px 14px;
 }
 
 .tech-tag:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+    transform: scale(1.07);
+    box-shadow: 0 6px 18px rgba(16, 185, 129, 0.3);
+    background: linear-gradient(
+        135deg,
+        var(--primary-light),
+        var(--secondary)
+    );
+    color: white;
 }
 
-/* Blob animado */
+/* ============================= */
+/*  BLOB ANIMADO                 */
+/* ============================= */
+
 .blob {
     position: absolute;
-    filter: blur(80px);
-    opacity: 0.4;
-    animation: float 10s infinite;
+    filter: blur(100px);
+    opacity: 0.35;
+    animation: float 12s ease-in-out infinite alternate;
 }
 
-/* Utilitários */
+@keyframes float {
+    from {
+        transform: translateY(0px) translateX(0px) scale(1);
+    }
+    to {
+        transform: translateY(-40px) translateX(20px) scale(1.05);
+    }
+}
+
+/* ============================= */
+/*  UTILITIES                    */
+/* ============================= */
+
 .line-clamp-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+/* ============================= */
+/*  BOTÕES PREMIUM               */
+/* ============================= */
+
+.btn-primary {
+    background: linear-gradient(
+        135deg,
+        var(--primary-light),
+        var(--secondary)
+    );
+    color: white;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(16, 185, 129, 0.4);
 }

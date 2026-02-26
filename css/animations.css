@@ -1,14 +1,28 @@
-/* Animação de flutuação */
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+/* ========================================= */
+/* FLOAT SUAVE PREMIUM                       */
+/* ========================================= */
+
+@keyframes float-soft {
+    0%   { transform: translate3d(0, 0, 0); }
+    50%  { transform: translate3d(0, -18px, 0); }
+    100% { transform: translate3d(0, 0, 0); }
 }
 
-/* Revelar elementos no scroll */
+.animate-float-soft {
+    animation: float-soft 8s ease-in-out infinite;
+}
+
+/* ========================================= */
+/* REVEAL ELEGANTE NO SCROLL                 */
+/* ========================================= */
+
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
+    transform: translateY(40px);
+    transition:
+        opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
 }
 
 .reveal.active {
@@ -16,45 +30,109 @@
     transform: translateY(0);
 }
 
-/* Delay para animações */
-.animation-delay-2000 {
-    animation-delay: 2s;
+/* Variante lateral */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Animação de pulso suave */
-.animate-pulse-slow {
-    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
 }
 
-/* Transições suaves */
-.transition-all {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
+/* ========================================= */
+/* DELAYS CUSTOMIZÁVEIS                      */
+/* ========================================= */
+
+.animation-delay-1000 { animation-delay: 1s; }
+.animation-delay-1500 { animation-delay: 1.5s; }
+.animation-delay-2000 { animation-delay: 2s; }
+
+/* ========================================= */
+/* PULSE REFINADO (mais sutil)               */
+/* ========================================= */
+
+@keyframes pulse-soft {
+    0%, 100% { transform: scale(1); opacity: 0.85; }
+    50% { transform: scale(1.04); opacity: 1; }
 }
 
-/* Cursor piscando */
-@keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+.animate-pulse-soft {
+    animation: pulse-soft 5s ease-in-out infinite;
+}
+
+/* ========================================= */
+/* TRANSIÇÕES GLOBAIS PREMIUM                */
+/* ========================================= */
+
+.transition-smooth {
+    transition:
+        transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        background 0.35s ease,
+        color 0.25s ease;
+}
+
+/* ========================================= */
+/* CURSOR PISCANDO ELEGANTE                  */
+/* ========================================= */
+
+@keyframes blink-soft {
+    0%, 60% { opacity: 1; }
+    61%, 100% { opacity: 0; }
 }
 
 .animate-blink {
-    animation: blink 1s infinite;
+    animation: blink-soft 1.2s ease-in-out infinite;
 }
 
-/* Efeito de digitação suave */
+/* ========================================= */
+/* DIGITAÇÃO                                 */
+/* ========================================= */
+
 #typing-impact {
     min-width: 1ch;
     display: inline-block;
+    border-right: 2px solid currentColor;
+    padding-right: 2px;
 }
 
-/* Animação da seta de scroll */
-@keyframes scroll-indicator {
-  0%, 100% { transform: translateY(0) scale(1); opacity: 0.7; }
-  50% { transform: translateY(6px) scale(1.05); opacity: 1; }
+/* ========================================= */
+/* SCROLL INDICATOR MAIS SOFISTICADO         */
+/* ========================================= */
+
+@keyframes scroll-indicator-soft {
+    0%   { transform: translateY(0); opacity: 0.6; }
+    50%  { transform: translateY(8px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0.6; }
 }
 
 .animate-scroll-indicator {
-  animation: scroll-indicator 1.3s ease-in-out infinite;
+    animation: scroll-indicator-soft 1.8s ease-in-out infinite;
+}
+
+/* ========================================= */
+/* FADE IN GLOBAL                            */
+/* ========================================= */
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease forwards;
+}
+
+/* ========================================= */
+/* PERFORMANCE & ACESSIBILIDADE              */
+/* ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
 }
